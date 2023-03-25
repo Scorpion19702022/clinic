@@ -1,0 +1,25 @@
+{
+  "name": "clinic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scorpion19702022/clinic.git"
+  },
+  "author": "Jacek Mosiński",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Scorpion19702022/clinic/issues"
+  },
+  "homepage": "https://github.com/Scorpion19702022/clinic#readme",
+  "devDependencies": {
+    "Babel": "^0.0.1",
+    "live-server": "^1.2.2",
+    "sass-compiler": "^1.3.2-beta",
+    "swiper": "^9.1.1"
+  }
+}
