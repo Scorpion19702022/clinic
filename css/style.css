@@ -1,1 +1,32 @@
-/*# sourceMappingURL=style.css.map */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-lightone: #dcf3ff;
+  --color-lighttwo: #baf2ef;
+  --color-lightthree: #a2d2df;
+  --color-lightfour: #86cecb;
+  --color-mediumone: #396d7c;
+  --color-mediumtwo: #137a7f;
+  --color-mediumthree: #257ca3;
+  --colot-darkone: #373b3e;
+  --color-dark: #000000;
+  --color-other: #e12885;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.6rem;
+}/*# sourceMappingURL=style.css.map */
