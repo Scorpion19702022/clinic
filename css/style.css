@@ -54,7 +54,7 @@ nav .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0em 3em;
-  background-color: var(--color-lightone);
+  background-color: var(--color-white);
   border-bottom: 0.04em solid var(--color-darkone);
 }
 nav .wrapper .logo {
@@ -94,7 +94,7 @@ nav .wrapper .navbar {
   padding: 8em 0em 12em 0em;
   top: 60px;
   left: 0;
-  background-color: var(--color-lightthree);
+  background-color: var(--color-white);
 }
 nav .wrapper .navbar__link {
   position: relative;
@@ -140,7 +140,7 @@ nav .wrapper .burger .hide {
   nav .navcontact {
     width: 100%;
     height: 30px;
-    background-color: var(--color-lightthree);
+    background-color: var(--color-lightone);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -156,7 +156,7 @@ nav .wrapper .burger .hide {
     padding: 0em 1em;
   }
   nav .navcontact i {
-    color: var(--colot-darkone);
+    color: var(--color-darkone);
   }
   nav .wrapper {
     position: relative;
@@ -178,5 +178,11 @@ nav .wrapper .burger .hide {
   }
   nav .wrapper .burger {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  nav .wrapper .logo a img {
+    width: 23%;
+    height: 23%;
   }
 }/*# sourceMappingURL=style.css.map */

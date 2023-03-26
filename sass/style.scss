@@ -48,7 +48,7 @@ nav {
 		align-items: center;
 		justify-content: space-between;
 		padding: 0em 3em;
-		background-color: var(--color-lightone);
+		background-color: var(--color-white);
 		border-bottom: 0.04em solid var(--color-darkone);
 		.logo {
 			width: 50%;
@@ -76,7 +76,7 @@ nav {
 			padding: 8em 0em 12em 0em;
 			top: 60px;
 			left: 0;
-			background-color: var(--color-lightthree);
+			background-color: var(--color-white);
 			// transform: translateX(-100%);
 			&__link {
 				position: relative;
