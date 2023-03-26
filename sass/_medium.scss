@@ -15,5 +15,23 @@
 				color: var(--colot-darkone);
 			}
 		}
+		.wrapper {
+			position: relative;
+			.navbar {
+				position: relative;
+				flex-direction: row;
+				width: 70%;
+				height: 100%;
+				top: 0;
+				padding: 0;
+				background: transparent;
+				a {
+					font-size: 2rem;
+				}
+			}
+			.burger {
+				display: none;
+			}
+		}
 	}
 }
