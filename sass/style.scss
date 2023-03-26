@@ -30,4 +30,32 @@ html {
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 1.6rem;
+	height: 100%;
 }
+
+nav {
+	width: 100%;
+	height: 60px;
+	background-color: yellow;
+	.navcontact {
+		width: 100%;
+		height: 30px;
+		background-color: red;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: none;
+		p {
+			padding: 0em 1em;
+		}
+		i {
+			color: var(--colot-darkone);
+		}
+	}
+}
+
+@import './small';
+@import './medium';
+@import './large';
+@import './xlarge';
+@import './xxlarge';
