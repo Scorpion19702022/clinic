@@ -78,15 +78,26 @@ nav {
 			background-color: var(--color-lightthree);
 			transform: translateX(-100%);
 			&__link {
+				position: relative;
 				color: var(--color-darkone);
 				font-size: 2em;
 				text-decoration: none;
 				padding-bottom: 0.1em;
-				transition: all 0.3s ease-in-out;
+				transition: border-bottom 0.3s ease-in-out;
 				display: flex;
 				justify-content: center;
-				&:hover {
+				&::before {
+					position: absolute;
+					content: '';
 					border-bottom: 0.08em solid var(--color-mediumtwo);
+					width: 0%;
+					bottom: 0;
+					transition: width 0.3s ease-in-out;
+				}
+				&:hover::before {
+					width: 100%;
+				}
+				&:hover {
 					color: var(--color-mediumtwo);
 				}
 			}

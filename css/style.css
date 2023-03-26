@@ -98,12 +98,13 @@ nav .wrapper .navbar {
           transform: translateX(-100%);
 }
 nav .wrapper .navbar__link {
+  position: relative;
   color: var(--color-darkone);
   font-size: 2em;
   text-decoration: none;
   padding-bottom: 0.1em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: border-bottom 0.3s ease-in-out;
+  transition: border-bottom 0.3s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,8 +112,19 @@ nav .wrapper .navbar__link {
       -ms-flex-pack: center;
           justify-content: center;
 }
-nav .wrapper .navbar__link:hover {
+nav .wrapper .navbar__link::before {
+  position: absolute;
+  content: "";
   border-bottom: 0.08em solid var(--color-mediumtwo);
+  width: 0%;
+  bottom: 0;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+nav .wrapper .navbar__link:hover::before {
+  width: 100%;
+}
+nav .wrapper .navbar__link:hover {
   color: var(--color-mediumtwo);
 }
 nav .wrapper .actionnav {
