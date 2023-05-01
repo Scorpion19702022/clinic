@@ -12,8 +12,8 @@ const handleBtn = () => {
 	links.forEach(el => {
 		el.addEventListener('click', () => {
 			nav.classList.remove('actionnav')
-			bars.classList.remove('hide')
-			cross.classList.add('hide')
+			bars.classList.add('hide')
+			cross.classList.remove('hide')
 		})
 	})
 }
