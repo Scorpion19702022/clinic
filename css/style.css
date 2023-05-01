@@ -107,7 +107,7 @@ nav .wrapper .navbar__link {
   color: var(--color-darkone);
   font-size: 3rem;
   text-decoration: none;
-  padding-bottom: 0.4em;
+  padding-bottom: 0.2em;
   -webkit-transition: border-bottom 0.3s ease-in-out;
   transition: border-bottom 0.3s ease-in-out;
   display: -webkit-box;
@@ -216,5 +216,19 @@ nav .wrapper .burger .hide {
   nav .wrapper .logo a img {
     width: 23%;
     height: 23%;
+  }
+}
+@media (min-width: 1400px) {
+  nav .wrapper .logo {
+    width: 27%;
+    height: 27%;
+  }
+  nav .wrapper .logo a img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  nav .wrapper .navbar {
+    width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */
