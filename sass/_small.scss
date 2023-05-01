@@ -1,2 +1,24 @@
 @media (max-width: 576px) {
+	nav {
+		.wrapper {
+			padding: 0em 1em;
+			.logo {
+				width: 50%;
+				height: 50%;
+				a {
+					img {
+						width: 50%;
+						height: 50%;
+					}
+				}
+			}
+			.navbar {
+				padding: 4em 0em 8em 0em;
+				&__link {
+					padding-bottom: 0.8em;
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
 }

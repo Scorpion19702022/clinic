@@ -105,9 +105,9 @@ nav .wrapper .navbar {
 nav .wrapper .navbar__link {
   position: relative;
   color: var(--color-darkone);
-  font-size: 2em;
+  font-size: 3rem;
   text-decoration: none;
-  padding-bottom: 0.1em;
+  padding-bottom: 0.4em;
   -webkit-transition: border-bottom 0.3s ease-in-out;
   transition: border-bottom 0.3s ease-in-out;
   display: -webkit-box;
@@ -146,6 +146,26 @@ nav .wrapper .burger .hide {
   display: none;
 }
 
+@media (max-width: 576px) {
+  nav .wrapper {
+    padding: 0em 1em;
+  }
+  nav .wrapper .logo {
+    width: 50%;
+    height: 50%;
+  }
+  nav .wrapper .logo a img {
+    width: 50%;
+    height: 50%;
+  }
+  nav .wrapper .navbar {
+    padding: 4em 0em 8em 0em;
+  }
+  nav .wrapper .navbar__link {
+    padding-bottom: 0.8em;
+    font-size: 1.8rem;
+  }
+}
 @media (min-width: 768px) {
   nav .navcontact {
     width: 100%;
