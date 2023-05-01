@@ -95,6 +95,12 @@ nav .wrapper .navbar {
   top: 60px;
   left: 0;
   background-color: var(--color-white);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 nav .wrapper .navbar__link {
   position: relative;
@@ -125,6 +131,10 @@ nav .wrapper .navbar__link:hover::before {
 }
 nav .wrapper .navbar__link:hover {
   color: var(--color-mediumtwo);
+}
+nav .wrapper .actionnav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 nav .wrapper .burger {
   font-size: 3rem;
@@ -172,6 +182,8 @@ nav .wrapper .burger .hide {
     top: 0;
     padding: 0;
     background: transparent;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   nav .wrapper .navbar a {
     font-size: 2rem;
