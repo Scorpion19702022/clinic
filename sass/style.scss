@@ -121,6 +121,26 @@ nav {
 	}
 }
 
+// ---HOME---
+
+.sectionhome {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	.info {
+		width: 100%;
+		height: 270px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&__heading {
+			padding-bottom: 0.2em;
+		}
+	}
+}
+
 @import './small';
 @import './medium';
 @import './large';
