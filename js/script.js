@@ -5,6 +5,21 @@ const burgerBtn = document.querySelector('.burger')
 const bars = document.querySelector('.fa-bars')
 const cross = document.querySelector('.fa-xmark')
 
+// ====================================================
+
+const body = document.querySelector('body')
+const infoHome = document.querySelector('.info')
+
+body.onload = function () {
+	loadInfo()
+}
+
+const loadInfo = () => {
+	setTimeout(() => {
+		infoHome.classList.add('actioninfo')
+	}, 800)
+}
+
 const handleBtn = () => {
 	nav.classList.toggle('actionnav')
 	bars.classList.toggle('hide')
