@@ -23,20 +23,11 @@
 	}
 
 	.sectionhome {
-		padding: 4em 2em 2em 2em;
 		height: 100vh;
 		.info {
 			padding: 0.2em;
 			height: 40%;
 			margin-bottom: 1em;
-			&__heading {
-				&--head {
-					font-size: 2rem;
-				}
-			}
-			p {
-				font-size: 1.3rem;
-			}
 		}
 		.image {
 			height: 40%;

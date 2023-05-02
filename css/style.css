@@ -271,19 +271,12 @@ nav .wrapper .burger .hide {
     font-size: 1.8rem;
   }
   .sectionhome {
-    padding: 4em 2em 2em 2em;
     height: 100vh;
   }
   .sectionhome .info {
     padding: 0.2em;
     height: 40%;
     margin-bottom: 1em;
-  }
-  .sectionhome .info__heading--head {
-    font-size: 2rem;
-  }
-  .sectionhome .info p {
-    font-size: 1.3rem;
   }
   .sectionhome .image {
     height: 40%;
