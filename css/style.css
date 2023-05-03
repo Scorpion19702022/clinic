@@ -268,7 +268,7 @@ nav .wrapper .burger .hide {
   }
   nav .wrapper .navbar__link {
     padding-bottom: 0.8em;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
   .sectionhome {
     height: 100vh;
@@ -333,6 +333,9 @@ nav .wrapper .burger .hide {
   }
   nav .wrapper .burger {
     display: none;
+  }
+  .sectionhome {
+    height: 100vh;
   }
 }
 @media (min-width: 992px) {
