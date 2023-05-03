@@ -1,2 +1,50 @@
 @media (min-width: 1200px) {
+	.sectionhome {
+		padding: 8em 2em 2em 2em;
+		flex-direction: row;
+		.info {
+			padding: 4em 2em;
+			width: 40%;
+			height: 100%;
+			justify-content: space-between;
+			transform: translateY(15%);
+			opacity: 0;
+			&__heading {
+				&--head {
+					font-size: 6rem;
+				}
+			}
+			&__text {
+				display: flex;
+				flex-direction: column;
+				align-self: flex-end;
+				p {
+					font-size: 1.6em;
+				}
+			}
+		}
+		.actioninfo {
+			transform: translateY(0);
+			opacity: 1;
+		}
+		.image {
+			width: 55%;
+			height: 100%;
+			padding: 4em 2em;
+			img {
+				height: 75%;
+				object-fit: cover;
+				object-position: 480%;
+				// object-position: left;
+			}
+			&__info {
+				width: 100%;
+				position: relative;
+				align-items: center;
+				justify-content: center;
+				padding-bottom: 1em;
+				border-bottom: 0.6em solid #86cecb;
+			}
+		}
+	}
 }
