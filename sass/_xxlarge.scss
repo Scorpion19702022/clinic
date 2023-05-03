@@ -37,6 +37,11 @@
 			img {
 				object-position: top;
 			}
+			&__info {
+				.logo {
+					width: 10%;
+				}
+			}
 		}
 	}
 }

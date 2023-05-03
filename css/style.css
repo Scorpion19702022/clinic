@@ -315,6 +315,7 @@ nav .wrapper .burger .hide {
   background-color: var(--color-whiteBlend);
 }
 .sectionhome .image__info .logo {
+  z-index: 1;
   width: 30%;
 }
 
@@ -659,5 +660,8 @@ nav .wrapper .burger .hide {
   .sectionhome .image img {
     -o-object-position: top;
        object-position: top;
+  }
+  .sectionhome .image__info .logo {
+    width: 10%;
   }
 }/*# sourceMappingURL=style.css.map */

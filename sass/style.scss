@@ -180,6 +180,7 @@ nav {
 			width: 100%;
 			background-color: var(--color-whiteBlend);
 			.logo {
+				z-index: 1;
 				width: 30%;
 			}
 		}
