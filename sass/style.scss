@@ -20,7 +20,7 @@
 	--color-mediumthree: #257ca3;
 	--color-darkone: #373b3e;
 	--color-dark: #000000;
-	--color-other: #e12885;
+	--color-other: #9d1c5d;
 }
 
 html {
@@ -147,6 +147,9 @@ nav {
 			display: flex;
 			flex-direction: column;
 			// padding-bottom: 1em;
+			.pink {
+				color: var(--color-other);
+			}
 		}
 		&__text {
 			p {

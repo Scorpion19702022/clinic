@@ -16,4 +16,27 @@
 			}
 		}
 	}
+
+	.sectionhome {
+		padding: 4em 2em 2em 2em;
+		.info {
+			&__heading {
+				&--head {
+					font-size: 6.8rem;
+				}
+			}
+			&__text {
+				height: 70%;
+				align-self: center;
+				justify-content: space-between;
+				padding-bottom: 0;
+			}
+		}
+		.image {
+			padding-bottom: 6em;
+			img {
+				object-position: top;
+			}
+		}
+	}
 }

@@ -35,7 +35,7 @@ h1 {
   --color-mediumthree: #257ca3;
   --color-darkone: #373b3e;
   --color-dark: #000000;
-  --color-other: #e12885;
+  --color-other: #9d1c5d;
 }
 
 html {
@@ -212,6 +212,9 @@ nav .wrapper .burger .hide {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.sectionhome .info__heading .pink {
+  color: var(--color-other);
 }
 .sectionhome .info__text p {
   margin-top: 1em;
@@ -423,7 +426,7 @@ nav .wrapper .burger .hide {
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 1em;
-    border-bottom: 0.6em solid #86cecb;
+    border-bottom: 0.5em solid #86cecb;
   }
 }
 @media (min-width: 1400px) {
@@ -438,5 +441,27 @@ nav .wrapper .burger .hide {
   }
   nav .wrapper .navbar {
     width: 60%;
+  }
+  .sectionhome {
+    padding: 4em 2em 2em 2em;
+  }
+  .sectionhome .info__heading--head {
+    font-size: 6.8rem;
+  }
+  .sectionhome .info__text {
+    height: 70%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0;
+  }
+  .sectionhome .image {
+    padding-bottom: 6em;
+  }
+  .sectionhome .image img {
+    -o-object-position: top;
+       object-position: top;
   }
 }/*# sourceMappingURL=style.css.map */
