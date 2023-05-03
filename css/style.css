@@ -11,7 +11,69 @@ h1 {
   margin: 0.2em 0;
   width: 50%;
   height: 8px;
+  background-color: #396d7c;
+}
+
+button {
+  position: relative;
+  width: 100%;
+  padding: 0.4em 1em;
+  background: none;
   background-color: #86cecb;
+  border-radius: 0.4em;
+  border: 0.04em solid #396d7c;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+button::before {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 130%;
+  background-color: #396d7c;
+  border-radius: 0.4em;
+  z-index: -1;
+  -webkit-transform: translate(-130%, -25%);
+          transform: translate(-130%, -25%);
+  -webkit-filter: blur(0.2em);
+          filter: blur(0.2em);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+button:hover::before {
+  -webkit-transform: translate(-20%, -25%);
+          transform: translate(-20%, -25%);
+}
+button::after {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 130%;
+  background-color: #396d7c;
+  border-radius: 0.4em;
+  z-index: -1;
+  -webkit-transform: translate(30%, -25%);
+          transform: translate(30%, -25%);
+  -webkit-filter: blur(0.2em);
+          filter: blur(0.2em);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+button:hover::after {
+  -webkit-transform: translate(-80%, -25%);
+          transform: translate(-80%, -25%);
+}
+button:hover {
+  color: #ffffff;
 }
 
 *,
@@ -30,6 +92,7 @@ h1 {
   --color-lighttwo: #baf2ef;
   --color-lightthree: #a2d2df;
   --color-lightfour: #86cecb;
+  --color-lightfourBlend: rgba(134, 206, 202, 0.6);
   --color-mediumone: #396d7c;
   --color-mediumtwo: #137a7f;
   --color-mediumthree: #257ca3;
@@ -255,6 +318,139 @@ nav .wrapper .burger .hide {
   width: 30%;
 }
 
+.aboutus {
+  height: 100%;
+  padding: 0em;
+  background-image: url("../img/hospital_buoldig.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aboutus .infomobile {
+  padding: 6em 2em 2em 2em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.aboutus .infomobile div {
+  width: 30%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em;
+  margin-bottom: 23em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 2em;
+  background-color: var(--color-lightfourBlend);
+  -webkit-box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+          box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+}
+.aboutus .infomobile div i {
+  font-size: 2.8rem;
+}
+.aboutus .infomobile div h2 {
+  font-size: 4rem;
+  font-weight: 100;
+  color: var(--color-mediumtwo);
+}
+.aboutus .infomobile div p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.aboutus .box {
+  padding: 1em;
+  margin-bottom: 2em;
+  width: 90%;
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-lightfourBlend);
+  border-top-left-radius: 2em;
+  -webkit-box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+          box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+  overflow: hidden;
+}
+.aboutus .box__info {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.aboutus .box__info--heading {
+  font-weight: 100;
+  font-size: 3.6rem;
+}
+.aboutus .box__img {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.aboutus .box__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0.04em solid var(--color-mediumone);
+  -webkit-box-shadow: 0.2em 0.2em 0em var(--color-mediumone);
+          box-shadow: 0.2em 0.2em 0em var(--color-mediumone);
+}
+
 @media (max-width: 576px) {
   nav .wrapper {
     padding: 0em 1em;
@@ -426,7 +622,7 @@ nav .wrapper .burger .hide {
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 1em;
-    border-bottom: 0.5em solid #86cecb;
+    border-bottom: 0.5em solid #396d7c;
   }
 }
 @media (min-width: 1400px) {
