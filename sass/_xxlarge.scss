@@ -39,7 +39,15 @@
 			}
 			&__info {
 				.logo {
-					width: 10%;
+					// width: 70%;
+					height: 50%;
+					object-fit: cover;
+					img {
+						height: 100%;
+						width: 100%;
+						object-position: left;
+						object-fit: cover;
+					}
 				}
 			}
 		}
