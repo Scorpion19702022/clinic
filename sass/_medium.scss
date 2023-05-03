@@ -37,5 +37,19 @@
 	}
 	.sectionhome {
 		height: 100vh;
+		.info {
+			height: 23%;
+			margin-bottom: 0.5em;
+			// z-index: 1;
+		}
+		.image {
+			height: 70%;
+			width: 100%;
+			img {
+				height: 100%;
+				object-position: top;
+				object-fit: cover;
+			}
+		}
 	}
 }

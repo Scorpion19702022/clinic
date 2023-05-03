@@ -337,6 +337,21 @@ nav .wrapper .burger .hide {
   .sectionhome {
     height: 100vh;
   }
+  .sectionhome .info {
+    height: 23%;
+    margin-bottom: 0.5em;
+  }
+  .sectionhome .image {
+    height: 70%;
+    width: 100%;
+  }
+  .sectionhome .image img {
+    height: 100%;
+    -o-object-position: top;
+       object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (min-width: 992px) {
   nav .wrapper .logo a img {
