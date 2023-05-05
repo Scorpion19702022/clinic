@@ -672,15 +672,19 @@ nav .wrapper .burger .hide {
     position: relative;
   }
   .sectionhome .image img {
-    width: 85%;
+    width: 100%;
     height: 100%;
     -o-object-position: top;
        object-position: top;
+    -o-object-position: 26%;
+       object-position: 26%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .sectionhome .image__info {
     position: absolute;
-    padding: 0.6em;
-    right: 5%;
+    padding: 0.2em;
+    right: 0%;
     bottom: 2%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -692,7 +696,10 @@ nav .wrapper .burger .hide {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
+    height: 28%;
     background-color: var(--color-whiteBlend);
     border-bottom: none;
   }
