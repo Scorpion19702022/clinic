@@ -20,6 +20,7 @@
 	.sectionhome {
 		padding: 4em 2em 2em 2em;
 		.info {
+			padding-top: 6em;
 			&__heading {
 				&--head {
 					font-size: 6.8rem;
@@ -33,21 +34,26 @@
 			}
 		}
 		.image {
-			padding-bottom: 6em;
+			position: relative;
 			img {
+				width: 85%;
+				height: 100%;
 				object-position: top;
 			}
 			&__info {
+				position: absolute;
+				padding: 0.6em;
+				right: 5%;
+				bottom: 2%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				background-color: var(--color-whiteBlend);
+				border-bottom: none;
 				.logo {
-					// width: 70%;
-					height: 50%;
-					object-fit: cover;
-					img {
-						height: 100%;
-						width: 100%;
-						object-position: left;
-						object-fit: cover;
-					}
+					display: flex;
+					justify-content: center;
 				}
 			}
 		}
