@@ -14,6 +14,7 @@ const infoHome = document.querySelector('.info')
 
 const boxCount = document.querySelector('.infomobile')
 const itemCount = document.querySelectorAll('.infocount__count')
+
 console.log(boxCount)
 console.log(itemCount)
 
@@ -51,8 +52,8 @@ const optionCount = {
 }
 
 const startCounter = entry => {
-	console.log(entry[0])
-	console.log(entry[0].isIntersecting)
+	// console.log(entry[0])
+	// console.log(entry[0].isIntersecting)
 
 	if (entry[0].isIntersecting) {
 		itemCount.forEach(count => {
@@ -76,6 +77,10 @@ const startCounter = entry => {
 		})
 	}
 }
+
+// ====================================================
+
+// ====================================================
 
 burgerBtn.addEventListener('click', handleBtn)
 const observer = new IntersectionObserver(startCounter, optionCount)
