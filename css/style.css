@@ -355,7 +355,7 @@ nav .wrapper .burger .hide {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.aboutus .infomobile .info {
+.aboutus .infomobile .infocount {
   width: 30%;
   height: 150px;
   display: -webkit-box;
@@ -368,7 +368,7 @@ nav .wrapper .burger .hide {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 1em;
-  margin-bottom: 23em;
+  margin-bottom: 12em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -377,15 +377,15 @@ nav .wrapper .burger .hide {
   -webkit-box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
           box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
 }
-.aboutus .infomobile .info i {
+.aboutus .infomobile .infocount i {
   font-size: 2.8rem;
 }
-.aboutus .infomobile .info__count {
+.aboutus .infomobile .infocount__count {
   font-size: 4rem;
   font-weight: 100;
   color: var(--color-mediumtwo);
 }
-.aboutus .infomobile .info h3 {
+.aboutus .infomobile .infocount h3 {
   font-size: 1.8rem;
 }
 .aboutus .box {

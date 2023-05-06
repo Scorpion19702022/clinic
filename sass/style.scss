@@ -208,14 +208,14 @@ nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		.info {
+		.infocount {
 			width: 30%;
 			height: 150px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
 			padding: 1em;
-			margin-bottom: 23em;
+			margin-bottom: 12em;
 			align-items: center;
 			border-top-left-radius: 2em;
 			background-color: var(--color-lightfourBlend);
