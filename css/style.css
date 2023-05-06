@@ -830,4 +830,14 @@ nav .wrapper .burger .hide {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .sectionaboutus .infomobile {
+    width: 75%;
+    height: 40%;
+  }
+  .sectionaboutus .infomobile .infocount {
+    height: 100%;
+  }
+  .sectionaboutus .box {
+    width: 75%;
+  }
 }/*# sourceMappingURL=style.css.map */
