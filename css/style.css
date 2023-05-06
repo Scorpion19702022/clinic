@@ -621,6 +621,28 @@ nav .wrapper .burger .hide {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .sectionaboutus {
+    padding: 6em 4em 2em 4em;
+    padding: 1.2em;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .sectionaboutus .infomobile {
+    padding: 8em 2em 2em 2em;
+    width: 100%;
+    height: 40%;
+  }
+  .sectionaboutus .infomobile .infocount {
+    width: 30%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  .sectionaboutus .box {
+    width: 100%;
+    height: 34%;
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 992px) {
   nav .wrapper .logo a img {

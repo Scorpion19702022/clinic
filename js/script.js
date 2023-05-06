@@ -22,6 +22,17 @@ const itemCount = document.querySelectorAll('.infocount__count')
 
 const actionAbout = document.querySelector('.box__info')
 
+const scrollInAboutUs = () => {
+	// console.log(window.scrollY)
+	setTimeout(() => {
+		if (window.scrollY >= 320) {
+			actionAbout.classList.add('actionaboutus')
+		} else {
+			actionAbout.classList.remove('actionaboutus')
+		}
+	}, 500)
+}
+
 // ====================================================
 
 body.onload = function () {
@@ -90,17 +101,6 @@ const startCounter = entry => {
 }
 
 // ====================================================
-
-const scrollInAboutUs = () => {
-	// console.log(window.scrollY)
-	setTimeout(() => {
-		if (window.scrollY >= 320) {
-			actionAbout.classList.add('actionaboutus')
-		} else {
-			actionAbout.classList.remove('actionaboutus')
-		}
-	}, 500)
-}
 
 // ====================================================
 

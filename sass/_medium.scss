@@ -52,4 +52,28 @@
 			}
 		}
 	}
+	.sectionaboutus {
+		padding: 6em 4em 2em 4em;
+		padding: 1.2em;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		.infomobile {
+			// margin-top: 20em;
+			// padding: 2em;
+			padding: 8em 2em 2em 2em;
+			width: 100%;
+			height: 40%;
+			.infocount {
+				width: 30%;
+				height: 100%;
+				margin-bottom: 0;
+			}
+		}
+		.box {
+			width: 100%;
+			height: 34%;
+			margin-bottom: 0;
+		}
+	}
 }
