@@ -746,6 +746,15 @@ nav .wrapper .burger .hide {
     padding-bottom: 0;
     padding-top: 2em;
   }
+  .sectionaboutus .infomobile .infocount {
+    width: 25%;
+  }
+  .sectionaboutus .box__info {
+    width: 60%;
+  }
+  .sectionaboutus .box__img {
+    width: 27%;
+  }
 }
 @media (min-width: 1400px) {
   nav .wrapper .logo {

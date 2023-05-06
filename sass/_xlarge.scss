@@ -58,4 +58,20 @@
 			}
 		}
 	}
+
+	.sectionaboutus {
+		.infomobile {
+			.infocount {
+				width: 25%;
+			}
+		}
+		.box {
+			&__info {
+				width: 60%;
+			}
+			&__img {
+				width: 27%;
+			}
+		}
+	}
 }
