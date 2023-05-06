@@ -649,6 +649,25 @@ nav .wrapper .burger .hide {
     width: 23%;
     height: 23%;
   }
+  .sectionaboutus .infomobile .infocount i {
+    font-size: 4rem;
+  }
+  .sectionaboutus .infomobile .infocount__count {
+    font-size: 6rem;
+  }
+  .sectionaboutus .infomobile .infocount h3 {
+    font-size: 2.8rem;
+    font-weight: 100;
+  }
+  .sectionaboutus .box__info--heading {
+    font-size: 4.2rem;
+  }
+  .sectionaboutus .box__info--text {
+    font-size: 2rem;
+  }
+  .sectionaboutus .box__img img {
+    height: 75%;
+  }
 }
 @media (min-width: 1200px) {
   .sectionhome {
