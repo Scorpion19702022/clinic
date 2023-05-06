@@ -94,7 +94,7 @@ const startCounter = entry => {
 const scrollInAboutUs = () => {
 	// console.log(window.scrollY)
 	setTimeout(() => {
-		if (window.scrollY >= 450) {
+		if (window.scrollY >= 320) {
 			actionAbout.classList.add('actionaboutus')
 		} else {
 			actionAbout.classList.remove('actionaboutus')
