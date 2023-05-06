@@ -15,8 +15,8 @@ const infoHome = document.querySelector('.info')
 const boxCount = document.querySelector('.infomobile')
 const itemCount = document.querySelectorAll('.infocount__count')
 
-console.log(boxCount)
-console.log(itemCount)
+// console.log(boxCount)
+// console.log(itemCount)
 
 // ====================================================
 
@@ -51,17 +51,24 @@ const optionCount = {
 	rootMargin: '-25%',
 }
 
+const noOptioCount = {
+	rootMargin: '-10%',
+}
+
+let final
+let value
+
 const startCounter = entry => {
 	// console.log(entry[0])
 	// console.log(entry[0].isIntersecting)
 
 	if (entry[0].isIntersecting) {
 		itemCount.forEach(count => {
-			console.log(count)
+			// console.log(count)
 
 			const updateCount = () => {
-				const final = count.getAttribute('data-number')
-				const value = parseInt(count.textContent)
+				final = count.getAttribute('data-number')
+				value = parseInt(count.textContent)
 
 				const speed = final / 10
 
@@ -77,8 +84,6 @@ const startCounter = entry => {
 		})
 	}
 }
-
-// ====================================================
 
 // ====================================================
 
