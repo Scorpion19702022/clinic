@@ -318,12 +318,11 @@ nav .wrapper .burger .hide {
   width: 30%;
 }
 
-.aboutus {
+.sectionaboutus {
   height: 100%;
   padding: 0em;
   background-image: url("../img/hospital_buoldig.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-size: 175%;
   background-position: 0% 165px;
   background-attachment: fixed;
@@ -342,7 +341,7 @@ nav .wrapper .burger .hide {
       -ms-flex-align: center;
           align-items: center;
 }
-.aboutus .infomobile {
+.sectionaboutus .infomobile {
   padding: 3em 2em 2em 2em;
   width: 100%;
   display: -webkit-box;
@@ -355,7 +354,7 @@ nav .wrapper .burger .hide {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.aboutus .infomobile .infocount {
+.sectionaboutus .infomobile .infocount {
   width: 30%;
   height: 150px;
   display: -webkit-box;
@@ -377,18 +376,18 @@ nav .wrapper .burger .hide {
   -webkit-box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
           box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
 }
-.aboutus .infomobile .infocount i {
+.sectionaboutus .infomobile .infocount i {
   font-size: 2.8rem;
 }
-.aboutus .infomobile .infocount__count {
+.sectionaboutus .infomobile .infocount__count {
   font-size: 4rem;
   font-weight: 400;
   color: var(--color-mediumtwo);
 }
-.aboutus .infomobile .infocount h3 {
+.sectionaboutus .infomobile .infocount h3 {
   font-size: 1.8rem;
 }
-.aboutus .box {
+.sectionaboutus .box {
   padding: 1em;
   margin-bottom: 2em;
   width: 90%;
@@ -404,7 +403,7 @@ nav .wrapper .burger .hide {
           align-items: center;
   overflow: hidden;
 }
-.aboutus .box__info {
+.sectionaboutus .box__info {
   padding: 1em;
   width: 60%;
   height: 100%;
@@ -423,11 +422,11 @@ nav .wrapper .burger .hide {
   -webkit-box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
           box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
 }
-.aboutus .box__info--heading {
+.sectionaboutus .box__info--heading {
   font-weight: 100;
   font-size: 3.6rem;
 }
-.aboutus .box__img {
+.sectionaboutus .box__img {
   width: 35%;
   height: 100%;
   display: -webkit-box;
@@ -444,7 +443,7 @@ nav .wrapper .burger .hide {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.aboutus .box__img img {
+.sectionaboutus .box__img img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -473,6 +472,7 @@ nav .wrapper .burger .hide {
     font-size: 2.4rem;
   }
   .sectionhome {
+    padding: 2em;
     height: 100vh;
   }
   .sectionhome .info {
@@ -489,6 +489,60 @@ nav .wrapper .burger .hide {
   }
   .sectionhome .image__info h1 {
     font-size: 2rem;
+  }
+  .sectionaboutus {
+    padding: 1.2em;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .sectionaboutus .infomobile {
+    padding: 0;
+    height: 50%;
+  }
+  .sectionaboutus .infomobile .infocount {
+    height: 45%;
+    padding: 1em;
+    margin-bottom: 0;
+  }
+  .sectionaboutus .infomobile .infocount i {
+    font-size: 1.8rem;
+  }
+  .sectionaboutus .infomobile .infocount__count {
+    font-size: 2.8rem;
+  }
+  .sectionaboutus .infomobile .infocount h3 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .sectionaboutus .box {
+    padding: 0;
+    margin-bottom: 0;
+    height: 65%;
+    width: 100%;
+  }
+  .sectionaboutus .box__info {
+    padding: 0.8em;
+    width: 47%;
+    height: 75%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .sectionaboutus .box__info--heading {
+    font-size: 2.4rem;
+  }
+  .sectionaboutus .box__info--text {
+    font-size: 1.4rem;
+  }
+  .sectionaboutus .box__img {
+    width: 47%;
+    height: 42%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .sectionaboutus .box__img .btnabout {
+    width: 100%;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 768px) {

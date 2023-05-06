@@ -23,6 +23,7 @@
 	}
 
 	.sectionhome {
+		padding: 2em;
 		height: 100vh;
 		.info {
 			padding: 0.2em;
@@ -38,6 +39,58 @@
 			&__info {
 				h1 {
 					font-size: 2rem;
+				}
+			}
+		}
+	}
+	.sectionaboutus {
+		padding: 1.2em;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		.infomobile {
+			padding: 0;
+			height: 50%;
+			.infocount {
+				height: 45%;
+				padding: 1em;
+				margin-bottom: 0;
+				i {
+					font-size: 1.8rem;
+				}
+				&__count {
+					font-size: 2.8rem;
+				}
+				h3 {
+					text-align: center;
+					font-size: 1.4rem;
+				}
+			}
+		}
+		.box {
+			padding: 0;
+			margin-bottom: 0;
+			height: 65%;
+			width: 100%;
+			&__info {
+				padding: 0.8em;
+				width: 47%;
+				height: 75%;
+				align-self: flex-end;
+				&--heading {
+					font-size: 2.4rem;
+				}
+				&--text {
+					font-size: 1.4rem;
+				}
+			}
+			&__img {
+				width: 47%;
+				height: 42%;
+				align-self: flex-end;
+				.btnabout {
+					width: 100%;
+					font-size: 1.2rem;
 				}
 			}
 		}
