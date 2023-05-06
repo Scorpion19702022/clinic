@@ -20,6 +20,10 @@ const itemCount = document.querySelectorAll('.infocount__count')
 
 // ====================================================
 
+const actionAbout = document.querySelector('.box__info')
+
+// ====================================================
+
 body.onload = function () {
 	loadInfo()
 }
@@ -87,6 +91,20 @@ const startCounter = entry => {
 
 // ====================================================
 
+const scrollInAboutUs = () => {
+	// console.log(window.scrollY)
+	setTimeout(() => {
+		if (window.scrollY >= 450) {
+			actionAbout.classList.add('actionaboutus')
+		} else {
+			actionAbout.classList.remove('actionaboutus')
+		}
+	}, 500)
+}
+
+// ====================================================
+
 burgerBtn.addEventListener('click', handleBtn)
 const observer = new IntersectionObserver(startCounter, optionCount)
 observer.observe(boxCount)
+window.addEventListener('scroll', scrollInAboutUs)
