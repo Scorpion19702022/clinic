@@ -324,7 +324,9 @@ nav .wrapper .burger .hide {
   background-image: url("../img/hospital_buoldig.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: center;
+  background-size: 175%;
+  background-position: 0% 165px;
+  background-attachment: fixed;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,7 +343,7 @@ nav .wrapper .burger .hide {
           align-items: center;
 }
 .aboutus .infomobile {
-  padding: 6em 2em 2em 2em;
+  padding: 3em 2em 2em 2em;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +355,7 @@ nav .wrapper .burger .hide {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.aboutus .infomobile div {
+.aboutus .infomobile .info {
   width: 30%;
   height: 150px;
   display: -webkit-box;
@@ -375,17 +377,16 @@ nav .wrapper .burger .hide {
   -webkit-box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
           box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
 }
-.aboutus .infomobile div i {
+.aboutus .infomobile .info i {
   font-size: 2.8rem;
 }
-.aboutus .infomobile div h2 {
+.aboutus .infomobile .info__count {
   font-size: 4rem;
   font-weight: 100;
   color: var(--color-mediumtwo);
 }
-.aboutus .infomobile div p {
+.aboutus .infomobile .info h3 {
   font-size: 1.8rem;
-  font-weight: 700;
 }
 .aboutus .box {
   padding: 1em;

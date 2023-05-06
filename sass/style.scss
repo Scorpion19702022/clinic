@@ -194,19 +194,21 @@ nav {
 	background-image: url('../img/hospital_buoldig.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position-y: center;
+	background-size: 175%;
+	background-position: 0% 165px;
+	background-attachment: fixed;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	.infomobile {
-		padding: 6em 2em 2em 2em;
+		padding: 3em 2em 2em 2em;
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		div {
+		.info {
 			width: 30%;
 			height: 150px;
 			display: flex;
@@ -221,14 +223,13 @@ nav {
 			i {
 				font-size: 2.8rem;
 			}
-			h2 {
+			&__count {
 				font-size: 4rem;
 				font-weight: 100;
 				color: var(--color-mediumtwo);
 			}
-			p {
+			h3 {
 				font-size: 1.8rem;
-				font-weight: 700;
 			}
 		}
 	}
