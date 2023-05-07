@@ -25,12 +25,12 @@ const actionAbout = document.querySelector('.box__info')
 const scrollInAboutUs = () => {
 	// console.log(window.scrollY)
 	setTimeout(() => {
-		if (window.scrollY >= 320) {
+		if (window.scrollY >= 520) {
 			actionAbout.classList.add('actionaboutus')
 		} else {
 			actionAbout.classList.remove('actionaboutus')
 		}
-	}, 500)
+	}, 800)
 }
 
 // ====================================================
