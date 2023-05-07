@@ -474,6 +474,12 @@ nav .wrapper .burger .hide {
           box-shadow: 0.2em 0.2em 0em var(--color-mediumone);
 }
 
+.galleryclinic {
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
 @media (max-width: 576px) {
   nav .wrapper {
     padding: 0em 1em;
