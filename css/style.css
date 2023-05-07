@@ -477,7 +477,50 @@ nav .wrapper .burger .hide {
 .galleryclinic {
   padding: 0;
   overflow: hidden;
+  height: 100vh;
+}
+.galleryclinic .swiper {
+  width: 100%;
   height: 100%;
+}
+.galleryclinic .swiper .swipperobject {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.galleryclinic .swiper .swipperobject .obj {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.galleryclinic .swiper .swipperobject .obj img {
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.galleryclinic .swiper .swipperobject .obj .slidertext {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 90%;
+  height: 27%;
+  padding: 1em;
+  background-color: var(--color-lightfourBlend);
+  border-top-left-radius: 2em;
+  -webkit-box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+          box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.galleryclinic .swiper .swipperobject .obj .slidertext h1 {
+  font-weight: 100;
+  font-size: 2.4rem;
+}
+.galleryclinic .swiper .swipperobject .obj .actionslider {
+  opacity: 1;
 }
 
 @media (max-width: 576px) {
