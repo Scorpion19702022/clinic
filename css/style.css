@@ -30,6 +30,15 @@ button {
   -webkit-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
 }
+button a {
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+button a:hover {
+  color: #ffffff;
+}
 button::before {
   position: absolute;
   content: "";
