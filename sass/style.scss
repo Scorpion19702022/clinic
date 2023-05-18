@@ -306,10 +306,13 @@ nav {
 				}
 				.slidertext {
 					position: absolute;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
 					bottom: 10%;
 					left: 5%;
 					width: 90%;
-					height: 27%;
+					height: 15%;
 					padding: 1em;
 					background-color: var(--color-lightfourBlend);
 					border-top-left-radius: 2em;

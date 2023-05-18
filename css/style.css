@@ -502,10 +502,20 @@ nav .wrapper .burger .hide {
 }
 .galleryclinic .swiper .swipperobject .obj .slidertext {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   bottom: 10%;
   left: 5%;
   width: 90%;
-  height: 27%;
+  height: 15%;
   padding: 1em;
   background-color: var(--color-lightfourBlend);
   border-top-left-radius: 2em;
