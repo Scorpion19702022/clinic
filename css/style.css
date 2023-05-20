@@ -733,6 +733,20 @@ nav .wrapper .burger .hide {
     height: 34%;
     margin-bottom: 0;
   }
+  .galleryclinic .swiper .swipperobject .obj .slidertext {
+    bottom: 8%;
+    height: 20%;
+  }
+  .galleryclinic .swiper .swipperobject .obj .slidertext h1 {
+    font-size: 4rem;
+  }
+  .galleryclinic .swiper .swipperobject .obj .slidertext p {
+    font-size: 2rem;
+  }
+  .galleryclinic .swiper .swiper-pagination {
+    position: absolute;
+    bottom: 4%;
+  }
 }
 @media (min-width: 992px) {
   nav .wrapper .logo a img {

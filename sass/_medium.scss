@@ -76,4 +76,27 @@
 			margin-bottom: 0;
 		}
 	}
+
+	.galleryclinic {
+		.swiper {
+			.swipperobject {
+				.obj {
+					.slidertext {
+						bottom: 8%;
+						height: 20%;
+						h1 {
+							font-size: 4rem;
+						}
+						p {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+			.swiper-pagination {
+				position: absolute;
+				bottom: 4%;
+			}
+		}
+	}
 }
