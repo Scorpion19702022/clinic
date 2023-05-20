@@ -74,4 +74,18 @@
 			}
 		}
 	}
+
+	.galleryclinic {
+		.swiper {
+			.swipperobject {
+				.obj {
+					.slidertext {
+						width: 70%;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+	}
 }

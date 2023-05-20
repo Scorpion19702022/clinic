@@ -75,4 +75,18 @@
 			width: 75%;
 		}
 	}
+
+	.galleryclinic {
+		.swiper {
+			.swipperobject {
+				.obj {
+					.slidertext {
+						width: 50%;
+						left: 5%;
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+	}
 }

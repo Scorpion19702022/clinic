@@ -859,6 +859,12 @@ nav .wrapper .burger .hide {
   .sectionaboutus .box__img {
     width: 27%;
   }
+  .galleryclinic .swiper .swipperobject .obj .slidertext {
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 @media (min-width: 1400px) {
   nav .wrapper .logo {
@@ -943,5 +949,11 @@ nav .wrapper .burger .hide {
   }
   .sectionaboutus .box {
     width: 75%;
+  }
+  .galleryclinic .swiper .swipperobject .obj .slidertext {
+    width: 50%;
+    left: 5%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }/*# sourceMappingURL=style.css.map */
