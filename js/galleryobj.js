@@ -19,7 +19,7 @@ const loadText = () => {
 		viewText.forEach(el => {
 			el.classList.add('actionslider')
 		})
-	}, 800)
+	}, 500)
 }
 
 const handleBtn = () => {

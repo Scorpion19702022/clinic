@@ -95,4 +95,25 @@
 			}
 		}
 	}
+
+	.galleryclinic {
+		.swiper {
+			.swipperobject {
+				.obj {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					img {
+						height: 60vh;
+					}
+					.slidertext {
+						position: relative;
+						height: 30%;
+						background: none;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
 }

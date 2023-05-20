@@ -625,6 +625,28 @@ nav .wrapper .burger .hide {
     width: 100%;
     font-size: 1.2rem;
   }
+  .galleryclinic .swiper .swipperobject .obj {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .galleryclinic .swiper .swipperobject .obj img {
+    height: 60vh;
+  }
+  .galleryclinic .swiper .swipperobject .obj .slidertext {
+    position: relative;
+    height: 30%;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 @media (min-width: 768px) {
   nav .navcontact {
