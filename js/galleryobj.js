@@ -37,7 +37,7 @@ const handleBtn = () => {
 
 const swiper = new Swiper('.sliders', {
 	slidesPerView: 1,
-	spaceBetween: 30,
+	spaceBetween: 0,
 	loop: true,
 	autoplay: {
 		delay: 3500,

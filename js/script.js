@@ -20,10 +20,15 @@ const itemCount = document.querySelectorAll('.infocount__count')
 
 // ====================================================
 
+const logoOffer = document.querySelector('.boxheading__logo')
+const headingOffer = document.querySelector('.boxheading__heading')
+
+// ====================================================
+
 const actionAbout = document.querySelector('.box__info')
 
 const scrollInAboutUs = () => {
-	// console.log(window.scrollY)
+	console.log(window.scrollY)
 	setTimeout(() => {
 		if (window.scrollY >= 520) {
 			actionAbout.classList.add('actionaboutus')
@@ -31,6 +36,15 @@ const scrollInAboutUs = () => {
 			actionAbout.classList.remove('actionaboutus')
 		}
 	}, 800)
+	setTimeout(() => {
+		if (window.scrollY >= 900) {
+			logoOffer.classList.add('viewboxheading')
+			headingOffer.classList.add('viewboxheading')
+		} else {
+			logoOffer.classList.remove('viewboxheading')
+			headingOffer.classList.remove('viewboxheading')
+		}
+	}, 300)
 }
 
 // ====================================================
