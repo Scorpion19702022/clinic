@@ -237,6 +237,7 @@ nav .wrapper .burger .hide {
 }
 
 .sectionhome {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,13 +245,11 @@ nav .wrapper .burger .hide {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
   overflow: hidden;
 }
 .sectionhome .info {
@@ -267,7 +266,6 @@ nav .wrapper .burger .hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1em;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   opacity: 0;
@@ -328,13 +326,13 @@ nav .wrapper .burger .hide {
 }
 
 .sectionaboutus {
-  height: 100%;
-  padding: 0em;
+  height: 100vh;
+  padding: 4em 2em 2em 2em;
   background-image: url("../img/hospital_buoldig.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 275%;
-  background-position: 0% 65px;
+  background-position: 0% 70%;
   background-attachment: fixed;
   overflow: hidden;
   display: -webkit-box;
@@ -533,6 +531,9 @@ nav .wrapper .burger .hide {
   opacity: 1;
 }
 
+.sectionoffer {
+  height: 100vh;
+}
 .sectionoffer .boxheading {
   width: 100%;
   display: -webkit-box;
@@ -602,11 +603,13 @@ nav .wrapper .burger .hide {
   .sectionhome {
     padding: 4em 2em 2em 2em;
     height: 100vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .sectionhome .info {
     padding: 0.2em;
     height: 40%;
-    margin-bottom: 1em;
   }
   .sectionhome .image {
     height: 40%;
@@ -614,6 +617,8 @@ nav .wrapper .burger .hide {
   .sectionhome .image img {
     width: 100%;
     height: 100%;
+    -o-object-position: top;
+       object-position: top;
   }
   .sectionhome .image__info h1 {
     font-size: 2rem;
