@@ -620,6 +620,27 @@ nav .wrapper .burger .hide {
 .sectionoffer .accordionbox .accordion .accordionhead:hover .accordionarrow {
   color: var(--color-white);
 }
+.sectionoffer .accordionbox .accordion .accordioninfo {
+  display: none;
+  margin: 0.4em 0em 1em 0em;
+}
+.sectionoffer .accordionbox .accordion .accordioninfo__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.1em 0;
+  border-bottom: 0.1em dotted var(--color-darkone);
+}
+.sectionoffer .accordionbox .accordion .accordioninfo__offer--price {
+  color: var(--color-mediumone);
+  font-weight: bold;
+}
+.sectionoffer .accordionbox .accordion .actioninfo {
+  display: block;
+}
 
 @media (max-width: 576px) {
   nav .wrapper {

@@ -395,6 +395,23 @@ nav {
 					color: var(--color-white);
 				}
 			}
+			.accordioninfo {
+				display: none;
+				margin: 0.4em 0em 1em 0em;
+				&__offer {
+					display: flex;
+					justify-content: space-between;
+					padding: 0.1em 0;
+					border-bottom: 0.1em dotted var(--color-darkone);
+					&--price {
+						color: var(--color-mediumone);
+						font-weight: bold;
+					}
+				}
+			}
+			.actioninfo {
+				display: block;
+			}
 		}
 	}
 }
