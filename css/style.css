@@ -537,6 +537,7 @@ nav .wrapper .burger .hide {
 .sectionoffer .boxheading {
   width: 100%;
   height: 10%;
+  margin-bottom: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,9 +548,6 @@ nav .wrapper .burger .hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   overflow: hidden;
 }
 .sectionoffer .boxheading__heading {
@@ -562,6 +560,9 @@ nav .wrapper .burger .hide {
   transition: opacity 1.2s ease-in-out, -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, opacity 1.2s ease-in-out;
   transition: transform 0.5s ease-in-out, opacity 1.2s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.sectionoffer .boxheading .line {
+  width: 100%;
 }
 .sectionoffer .boxheading .viewboxheading {
   -webkit-transform: translateY(0);

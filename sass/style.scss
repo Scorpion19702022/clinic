@@ -339,10 +339,11 @@ nav {
 	.boxheading {
 		width: 100%;
 		height: 10%;
+		margin-bottom: 3em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-between;
+		// justify-content: space-between;
 		overflow: hidden;
 		&__heading {
 			font-size: 3.8rem;
@@ -350,6 +351,9 @@ nav {
 			transform: translateY(80%);
 			opacity: 0;
 			transition: transform 0.5s ease-in-out, opacity 1.2s ease-in-out;
+		}
+		.line {
+			width: 100%;
 		}
 		.viewboxheading {
 			transform: translateY(0);
