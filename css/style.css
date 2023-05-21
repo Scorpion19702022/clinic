@@ -568,10 +568,6 @@ nav .wrapper .burger .hide {
           transform: translateY(0);
   opacity: 1;
 }
-.sectionoffer .line {
-  margin-top: 0.02em;
-  width: 100%;
-}
 
 @media (max-width: 576px) {
   nav .wrapper {
@@ -920,6 +916,9 @@ nav .wrapper .burger .hide {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  .sectionoffer .boxheading__heading {
+    font-size: 4.6rem;
   }
 }
 @media (min-width: 1400px) {
