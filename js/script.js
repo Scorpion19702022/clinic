@@ -20,7 +20,6 @@ const itemCount = document.querySelectorAll('.infocount__count')
 
 // ====================================================
 
-const logoOffer = document.querySelector('.boxheading__logo')
 const headingOffer = document.querySelector('.boxheading__heading')
 
 // ====================================================
@@ -37,11 +36,9 @@ const scrollInAboutUs = () => {
 		}
 	}, 800)
 	setTimeout(() => {
-		if (window.scrollY >= 900) {
-			logoOffer.classList.add('viewboxheading')
+		if (window.scrollY >= 1150) {
 			headingOffer.classList.add('viewboxheading')
 		} else {
-			logoOffer.classList.remove('viewboxheading')
 			headingOffer.classList.remove('viewboxheading')
 		}
 	}, 300)

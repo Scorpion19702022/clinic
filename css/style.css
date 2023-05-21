@@ -536,9 +536,14 @@ nav .wrapper .burger .hide {
 }
 .sectionoffer .boxheading {
   width: 100%;
+  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -547,21 +552,8 @@ nav .wrapper .burger .hide {
           justify-content: space-between;
   overflow: hidden;
 }
-.sectionoffer .boxheading__logo {
-  width: 40%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  opacity: 0;
-  -webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: opacity 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, opacity 0.8s ease-in-out;
-  transition: transform 0.5s ease-in-out, opacity 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
 .sectionoffer .boxheading__heading {
-  width: 40%;
-  font-size: 3.2rem;
+  font-size: 3.8rem;
   text-align: right;
   -webkit-transform: translateY(80%);
           transform: translateY(80%);
@@ -577,7 +569,7 @@ nav .wrapper .burger .hide {
   opacity: 1;
 }
 .sectionoffer .line {
-  margin-top: 0.8em;
+  margin-top: 0.02em;
   width: 100%;
 }
 
@@ -703,7 +695,6 @@ nav .wrapper .burger .hide {
     padding: 5em 2em 2em 2em;
   }
   .sectionoffer .boxheading__heading {
-    width: 50%;
     font-size: 2.2rem;
   }
 }
@@ -805,6 +796,12 @@ nav .wrapper .burger .hide {
   .galleryclinic .swiper .swiper-pagination {
     position: absolute;
     bottom: 4%;
+  }
+  .sectionoffer {
+    padding: 8em 2em 2em 2em;
+  }
+  .sectionoffer .boxheading__heading {
+    font-size: 4.2rem;
   }
 }
 @media (min-width: 992px) {
