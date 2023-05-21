@@ -360,6 +360,43 @@ nav {
 			opacity: 1;
 		}
 	}
+	.accordionbox {
+		width: 100%;
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		.accordion {
+			margin-bottom: 0.4em;
+			.accordionhead {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1em;
+				border: 0.04em solid var(--color-mediumone);
+				cursor: pointer;
+				transition: background-color 0.3s ease-in-out;
+				&:hover {
+					background-color: var(--color-mediumone);
+				}
+				&__heading {
+					font-size: 2.6rem;
+					font-weight: 400;
+					transition: color 0.3s ease-in-out;
+				}
+				.accordionarrow {
+					font-size: 2.6rem;
+					color: var(--color-mediumone);
+					transition: color 0.3s ease-in-out;
+				}
+				&:hover .accordionhead__heading {
+					color: var(--color-white);
+				}
+				&:hover .accordionarrow {
+					color: var(--color-white);
+				}
+			}
+		}
+	}
 }
 
 @import './small';
