@@ -26,8 +26,19 @@ const headingOffer = document.querySelector('.boxheading__heading')
 
 const actionAbout = document.querySelector('.box__info')
 
+// ====================================================
+
+const accordionBox = document.querySelector('.accordionbox')
+const accordion = document.querySelectorAll('.accordionhead')
+const accordionInfo = document.querySelectorAll('.accordioninfo')
+const accordionArrow = document.querySelectorAll('.accordionarrow')
+
+console.log(accordionInfo)
+
+// ====================================================
+
 const scrollInAboutUs = () => {
-	console.log(window.scrollY)
+	// console.log(window.scrollY)
 	setTimeout(() => {
 		if (window.scrollY >= 520) {
 			actionAbout.classList.add('actionaboutus')
@@ -113,9 +124,41 @@ const startCounter = entry => {
 
 // ====================================================
 
+function openAccordionItems() {
+	if (this.nextElementSibling.classList.contains('actioninfo')) {
+		this.nextElementSibling.classList.remove('actioninfo')
+		this.nextElementSibling.classList.remove('arrowaction')
+	} else {
+		closeAccordionInfo()
+		this.nextElementSibling.classList.toggle('actioninfo')
+		this.nextElementSibling.classList.add('arrowaction')
+	}
+}
+
+const closeAccordionInfo = () => {
+	accordionInfo.forEach(el => {
+		el.classList.remove('actioninfo')
+	})
+}
+
+// const actionArrow = () => {
+// 	if (accordionInfo.classList.contains('actioninfo')) {
+// 		accordionArrow.forEach(el => {
+// 			el.classList.add('arrowaction')
+// 		})
+// 	} else {
+// 		accordionArrow.forEach(el => {
+// 			el.classList.remove('arrowaction')
+// 		})
+// 	}
+// }
+
 // ====================================================
 
 burgerBtn.addEventListener('click', handleBtn)
 const observer = new IntersectionObserver(startCounter, optionCount)
 observer.observe(boxCount)
 window.addEventListener('scroll', scrollInAboutUs)
+accordion.forEach(btn => {
+	btn.addEventListener('click', openAccordionItems)
+})

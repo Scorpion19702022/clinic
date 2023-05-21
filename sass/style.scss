@@ -339,7 +339,7 @@ nav {
 	.boxheading {
 		width: 100%;
 		height: 10%;
-		margin-bottom: 3em;
+		margin-bottom: 0.8em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -371,7 +371,7 @@ nav {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				padding: 1em;
+				padding: 0.4em;
 				border: 0.04em solid var(--color-mediumone);
 				cursor: pointer;
 				transition: background-color 0.3s ease-in-out;
@@ -379,12 +379,12 @@ nav {
 					background-color: var(--color-mediumone);
 				}
 				&__heading {
-					font-size: 2.6rem;
+					font-size: 2rem;
 					font-weight: 400;
 					transition: color 0.3s ease-in-out;
 				}
 				.accordionarrow {
-					font-size: 2.6rem;
+					font-size: 2rem;
 					color: var(--color-mediumone);
 					transition: color 0.3s ease-in-out;
 				}
@@ -393,6 +393,9 @@ nav {
 				}
 				&:hover .accordionarrow {
 					color: var(--color-white);
+				}
+				.arrowaction {
+					transform: rotate(180deg);
 				}
 			}
 			.accordioninfo {
