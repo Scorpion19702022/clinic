@@ -699,6 +699,13 @@ nav .wrapper .burger .hide {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  .sectionoffer {
+    padding: 5em 2em 2em 2em;
+  }
+  .sectionoffer .boxheading__heading {
+    width: 50%;
+    font-size: 2.2rem;
+  }
 }
 @media (min-width: 768px) {
   nav .navcontact {
