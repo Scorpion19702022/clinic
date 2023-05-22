@@ -620,10 +620,6 @@ nav .wrapper .burger .hide {
 .sectionoffer .accordionbox .accordion .accordionhead:hover .accordionarrow {
   color: var(--color-white);
 }
-.sectionoffer .accordionbox .accordion .accordionhead .arrowaction {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
 .sectionoffer .accordionbox .accordion .accordioninfo {
   display: none;
   margin: 0.4em 0em 1em 0em;
@@ -644,6 +640,17 @@ nav .wrapper .burger .hide {
 }
 .sectionoffer .accordionbox .accordion .actioninfo {
   display: block;
+}
+.sectionoffer .accordionbox .accordion .actionbtn {
+  background-color: var(--color-mediumone);
+}
+.sectionoffer .accordionbox .accordion .actionbtn .accordionhead__heading {
+  color: var(--color-white);
+}
+.sectionoffer .accordionbox .accordion .actionbtn .accordionarrow {
+  color: var(--color-white);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 @media (max-width: 576px) {

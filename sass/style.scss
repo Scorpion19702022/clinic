@@ -394,9 +394,6 @@ nav {
 				&:hover .accordionarrow {
 					color: var(--color-white);
 				}
-				.arrowaction {
-					transform: rotate(180deg);
-				}
 			}
 			.accordioninfo {
 				display: none;
@@ -412,8 +409,20 @@ nav {
 					}
 				}
 			}
+
 			.actioninfo {
 				display: block;
+			}
+
+			.actionbtn {
+				background-color: var(--color-mediumone);
+				.accordionhead__heading {
+					color: var(--color-white);
+				}
+				.accordionarrow {
+					color: var(--color-white);
+					transform: rotate(180deg);
+				}
 			}
 		}
 	}

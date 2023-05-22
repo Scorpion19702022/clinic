@@ -15,9 +15,6 @@ const infoHome = document.querySelector('.info')
 const boxCount = document.querySelector('.infomobile')
 const itemCount = document.querySelectorAll('.infocount__count')
 
-// console.log(boxCount)
-// console.log(itemCount)
-
 // ====================================================
 
 const headingOffer = document.querySelector('.boxheading__heading')
@@ -28,12 +25,9 @@ const actionAbout = document.querySelector('.box__info')
 
 // ====================================================
 
-const accordionBox = document.querySelector('.accordionbox')
+// const accordionBox = document.querySelector('.accordionbox')
 const accordion = document.querySelectorAll('.accordionhead')
 const accordionInfo = document.querySelectorAll('.accordioninfo')
-const accordionArrow = document.querySelectorAll('.accordionarrow')
-
-console.log(accordionInfo)
 
 // ====================================================
 
@@ -127,11 +121,9 @@ const startCounter = entry => {
 function openAccordionItems() {
 	if (this.nextElementSibling.classList.contains('actioninfo')) {
 		this.nextElementSibling.classList.remove('actioninfo')
-		this.nextElementSibling.classList.remove('arrowaction')
 	} else {
 		closeAccordionInfo()
 		this.nextElementSibling.classList.toggle('actioninfo')
-		this.nextElementSibling.classList.add('arrowaction')
 	}
 }
 
@@ -141,17 +133,11 @@ const closeAccordionInfo = () => {
 	})
 }
 
-// const actionArrow = () => {
-// 	if (accordionInfo.classList.contains('actioninfo')) {
-// 		accordionArrow.forEach(el => {
-// 			el.classList.add('arrowaction')
-// 		})
-// 	} else {
-// 		accordionArrow.forEach(el => {
-// 			el.classList.remove('arrowaction')
-// 		})
-// 	}
-// }
+accordion.forEach(el => {
+	el.addEventListener('click', () => {
+		el.classList.toggle('actionbtn')
+	})
+})
 
 // ====================================================
 
