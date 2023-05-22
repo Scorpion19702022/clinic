@@ -362,7 +362,7 @@ nav {
 	}
 	.accordionbox {
 		width: 100%;
-		height: 70%;
+		height: 60%;
 		display: flex;
 		flex-direction: column;
 		.accordion {
@@ -424,6 +424,30 @@ nav {
 					transform: rotate(180deg);
 				}
 			}
+		}
+	}
+	.infooffer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 25%;
+		&__img {
+			height: 60%;
+			opacity: 0;
+			transform: translateY(100%);
+			transition: transform 0.5s ease-in-out, opacity 1.2s ease-in-out;
+			img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.actioninfooffer {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		&__text {
+			text-align: center;
 		}
 	}
 }

@@ -25,9 +25,12 @@ const actionAbout = document.querySelector('.box__info')
 
 // ====================================================
 
-// const accordionBox = document.querySelector('.accordionbox')
 const accordion = document.querySelectorAll('.accordionhead')
 const accordionInfo = document.querySelectorAll('.accordioninfo')
+
+// ====================================================
+
+const logoOffer = document.querySelector('.infooffer__img')
 
 // ====================================================
 
@@ -45,6 +48,13 @@ const scrollInAboutUs = () => {
 			headingOffer.classList.add('viewboxheading')
 		} else {
 			headingOffer.classList.remove('viewboxheading')
+		}
+	}, 300)
+	setTimeout(() => {
+		if (window.scrollY >= 1800) {
+			logoOffer.classList.add('actioninfooffer')
+		} else {
+			logoOffer.classList.remove('actioninfooffer')
 		}
 	}, 300)
 }
@@ -120,9 +130,12 @@ const startCounter = entry => {
 
 function openAccordionItems() {
 	if (this.nextElementSibling.classList.contains('actioninfo')) {
+		this.classList.remove('actionbtn')
 		this.nextElementSibling.classList.remove('actioninfo')
 	} else {
 		closeAccordionInfo()
+		addStylesAccordion()
+		this.classList.toggle('actionbtn')
 		this.nextElementSibling.classList.toggle('actioninfo')
 	}
 }
@@ -133,11 +146,11 @@ const closeAccordionInfo = () => {
 	})
 }
 
-accordion.forEach(el => {
-	el.addEventListener('click', () => {
-		el.classList.toggle('actionbtn')
+const addStylesAccordion = () => {
+	accordion.forEach(el => {
+		el.classList.remove('actionbtn')
 	})
-})
+}
 
 // ====================================================
 
