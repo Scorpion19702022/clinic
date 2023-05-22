@@ -35,7 +35,7 @@ const logoOffer = document.querySelector('.infooffer__img')
 // ====================================================
 
 const scrollInAboutUs = () => {
-	// console.log(window.scrollY)
+	console.log(window.scrollY)
 	setTimeout(() => {
 		if (window.scrollY >= 520) {
 			actionAbout.classList.add('actionaboutus')
@@ -51,7 +51,7 @@ const scrollInAboutUs = () => {
 		}
 	}, 300)
 	setTimeout(() => {
-		if (window.scrollY >= 1800) {
+		if (window.scrollY >= 1250) {
 			logoOffer.classList.add('actioninfooffer')
 		} else {
 			logoOffer.classList.remove('actioninfooffer')

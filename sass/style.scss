@@ -375,9 +375,9 @@ nav {
 				border: 0.04em solid var(--color-mediumone);
 				cursor: pointer;
 				transition: background-color 0.3s ease-in-out;
-				&:hover {
-					background-color: var(--color-mediumone);
-				}
+				// &:hover {
+				// 	background-color: var(--color-mediumone);
+				// }
 				&__heading {
 					font-size: 2rem;
 					font-weight: 400;
@@ -388,12 +388,12 @@ nav {
 					color: var(--color-mediumone);
 					transition: color 0.3s ease-in-out;
 				}
-				&:hover .accordionhead__heading {
-					color: var(--color-white);
-				}
-				&:hover .accordionarrow {
-					color: var(--color-white);
-				}
+				// &:hover .accordionhead__heading {
+				// 	color: var(--color-white);
+				// }
+				// &:hover .accordionarrow {
+				// 	color: var(--color-white);
+				// }
 			}
 			.accordioninfo {
 				display: none;
@@ -434,6 +434,7 @@ nav {
 		height: 25%;
 		&__img {
 			height: 60%;
+			margin-bottom: 0.4em;
 			opacity: 0;
 			transform: translateY(100%);
 			transition: transform 0.5s ease-in-out, opacity 1.2s ease-in-out;

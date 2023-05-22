@@ -121,11 +121,17 @@
 	}
 
 	.sectionoffer {
-		padding: 5em 2em 2em 2em;
+		padding: 5em 2em 0em 2em;
 		.boxheading {
 			&__heading {
 				font-size: 2.2rem;
 			}
+		}
+		.accordionbox {
+			height: 65%;
+		}
+		.infooffer {
+			height: 15%;
 		}
 	}
 }
