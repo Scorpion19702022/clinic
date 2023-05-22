@@ -375,9 +375,6 @@ nav {
 				border: 0.04em solid var(--color-mediumone);
 				cursor: pointer;
 				transition: background-color 0.3s ease-in-out;
-				// &:hover {
-				// 	background-color: var(--color-mediumone);
-				// }
 				&__heading {
 					font-size: 2rem;
 					font-weight: 400;
@@ -388,12 +385,6 @@ nav {
 					color: var(--color-mediumone);
 					transition: color 0.3s ease-in-out;
 				}
-				// &:hover .accordionhead__heading {
-				// 	color: var(--color-white);
-				// }
-				// &:hover .accordionarrow {
-				// 	color: var(--color-white);
-				// }
 			}
 			.accordioninfo {
 				display: none;

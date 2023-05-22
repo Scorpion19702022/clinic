@@ -106,5 +106,25 @@
 				font-size: 4.2rem;
 			}
 		}
+		.accordionbox {
+			.accordion {
+				.accordionhead {
+					&:hover {
+						background-color: var(--color-mediumone);
+					}
+					&:hover .accordionhead__heading {
+						color: var(--color-white);
+					}
+					&:hover .accordionarrow {
+						color: var(--color-white);
+					}
+				}
+			}
+		}
+		.infooffer {
+			&__text {
+				font-size: 2rem;
+			}
+		}
 	}
 }

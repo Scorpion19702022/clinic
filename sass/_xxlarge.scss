@@ -89,4 +89,17 @@
 			}
 		}
 	}
+
+	.sectionoffer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.boxheading {
+			margin-bottom: 3em;
+			width: 70%;
+		}
+		.accordionbox {
+			width: 70%;
+		}
+	}
 }

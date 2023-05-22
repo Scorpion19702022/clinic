@@ -803,7 +803,7 @@ nav .wrapper .burger .hide {
             box-shadow: none;
   }
   .sectionoffer {
-    padding: 5em 2em 0em 2em;
+    padding: 5em 2em 1em 2em;
   }
   .sectionoffer .boxheading__heading {
     font-size: 2.2rem;
@@ -919,6 +919,18 @@ nav .wrapper .burger .hide {
   }
   .sectionoffer .boxheading__heading {
     font-size: 4.2rem;
+  }
+  .sectionoffer .accordionbox .accordion .accordionhead:hover {
+    background-color: var(--color-mediumone);
+  }
+  .sectionoffer .accordionbox .accordion .accordionhead:hover .accordionhead__heading {
+    color: var(--color-white);
+  }
+  .sectionoffer .accordionbox .accordion .accordionhead:hover .accordionarrow {
+    color: var(--color-white);
+  }
+  .sectionoffer .infooffer__text {
+    font-size: 2rem;
   }
 }
 @media (min-width: 992px) {
@@ -1131,5 +1143,24 @@ nav .wrapper .burger .hide {
     left: 5%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  .sectionoffer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectionoffer .boxheading {
+    margin-bottom: 3em;
+    width: 70%;
+  }
+  .sectionoffer .accordionbox {
+    width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */
