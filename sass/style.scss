@@ -444,6 +444,81 @@ nav {
 	}
 }
 
+// ---TEAMS---
+
+.teams {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.heading {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 2em;
+		h1 {
+			font-size: 4rem;
+			text-align: left;
+		}
+		.line {
+			align-self: flex-start;
+		}
+	}
+	.teams {
+		width: 80%;
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		transform: scale(1);
+		transition: transform 0.5s ease-in-out;
+		&__img {
+			height: 80%;
+			margin-bottom: 0.4em;
+			img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__info {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			margin: 1em 0em;
+			width: 85%;
+			i {
+				position: absolute;
+				top: -12%;
+				left: 0;
+				font-size: 14rem;
+				color: var(--color-mediumone);
+			}
+			p {
+				width: 60%;
+				margin-left: 10em;
+			}
+			&--text {
+				font-style: italic;
+				margin-bottom: 0.4em;
+			}
+			.signature {
+				display: flex;
+				flex-direction: column;
+				align-items: end;
+				text-align: end;
+				margin-bottom: 0.8em;
+			}
+		}
+		.btnteams {
+			align-self: center;
+		}
+	}
+	.teamsscale {
+		transform: scale(0);
+	}
+}
+
 @import './small';
 @import './medium';
 @import './large';
