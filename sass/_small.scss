@@ -134,4 +134,30 @@
 			height: 15%;
 		}
 	}
+
+	.sectionteams {
+		.heading {
+			margin-bottom: 1.2em;
+			h1 {
+				font-size: 2.2rem;
+			}
+		}
+		.teams {
+			width: 100%;
+			height: 60%;
+			&__img {
+				height: 70%;
+			}
+			&__info {
+				width: 100%;
+				i {
+					font-size: 8rem;
+				}
+				p {
+					width: 75%;
+					margin-left: 5em;
+				}
+			}
+		}
+	}
 }
