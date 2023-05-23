@@ -88,10 +88,34 @@
 			}
 		}
 	}
+
 	.sectionoffer {
 		.boxheading {
 			&__heading {
 				font-size: 4.6rem;
+			}
+		}
+	}
+
+	.sectionteams {
+		.teams {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			height: 80%;
+			&__img {
+				height: 100%;
+			}
+			&__info {
+				width: 38%;
+				height: 100%;
+				justify-content: flex-end;
+				i {
+					top: 55%;
+				}
+				p {
+					margin-left: 9em;
+				}
 			}
 		}
 	}

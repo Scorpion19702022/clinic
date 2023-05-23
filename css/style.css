@@ -47,8 +47,8 @@ button::before {
   background-color: #396d7c;
   border-radius: 0.4em;
   z-index: -1;
-  -webkit-transform: translate(-130%, -25%);
-          transform: translate(-130%, -25%);
+  -webkit-transform: translate(-150%, -25%);
+          transform: translate(-150%, -25%);
   -webkit-filter: blur(0.2em);
           filter: blur(0.2em);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -68,8 +68,8 @@ button::after {
   background-color: #396d7c;
   border-radius: 0.4em;
   z-index: -1;
-  -webkit-transform: translate(30%, -25%);
-          transform: translate(30%, -25%);
+  -webkit-transform: translate(50%, -25%);
+          transform: translate(50%, -25%);
   -webkit-filter: blur(0.2em);
           filter: blur(0.2em);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -1098,6 +1098,9 @@ nav .wrapper .burger .hide {
   .sectionaboutus .box__img img {
     height: 75%;
   }
+  .sectionteams {
+    padding: 8em 2em 2em 2em;
+  }
 }
 @media (min-width: 1200px) {
   .sectionhome {
@@ -1193,6 +1196,35 @@ nav .wrapper .burger .hide {
   }
   .sectionoffer .boxheading__heading {
     font-size: 4.6rem;
+  }
+  .sectionteams .teams {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 80%;
+  }
+  .sectionteams .teams__img {
+    height: 100%;
+  }
+  .sectionteams .teams__info {
+    width: 38%;
+    height: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .sectionteams .teams__info i {
+    top: 55%;
+  }
+  .sectionteams .teams__info p {
+    margin-left: 9em;
   }
 }
 @media (min-width: 1400px) {
