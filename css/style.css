@@ -800,6 +800,75 @@ nav .wrapper .burger .hide {
 .sectionteams .teamsscale {
   -webkit-transform: scale(0);
           transform: scale(0);
+  display: none;
+}
+.sectionteams .swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sectionteams .swiper .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sectionteams .swiper .card__img {
+  border-top-left-radius: 2em;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sectionteams .swiper .card__text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  right: 0;
+  width: 43%;
+  height: 12%;
+  padding: 0.6em;
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: var(--color-white);
+  border-top-left-radius: 2em;
+}
+.sectionteams .swiper .card__text--info {
+  font-size: 2rem;
+}
+.sectionteams .swiper .card__text .line {
+  margin-bottom: 0;
+}
+.sectionteams .swiper .card .crosscard {
+  position: absolute;
+  font-size: 5rem;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+  color: var(--color-darkone);
+}
+.sectionteams .swiper .card .crosscard:hover {
+  color: var(--color-mediumone);
+}
+.sectionteams .swiper .swiper-pagination {
+  position: absolute;
+  left: -30%;
 }
 
 @media (max-width: 576px) {

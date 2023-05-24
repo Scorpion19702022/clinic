@@ -516,6 +516,62 @@ nav {
 	}
 	.teamsscale {
 		transform: scale(0);
+		display: none;
+	}
+
+	.swiper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		.card {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			&__img {
+				border-top-left-radius: 2em;
+				height: 100%;
+				object-fit: cover;
+			}
+			&__text {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				// align-self: flex-end;
+				bottom: 0;
+				right: 0;
+				width: 43%;
+				height: 12%;
+				padding: 0.6em;
+				text-align: right;
+				align-items: flex-end;
+				background-color: var(--color-white);
+				border-top-left-radius: 2em;
+				&--info {
+					font-size: 2rem;
+				}
+				.line {
+					margin-bottom: 0;
+				}
+			}
+			.crosscard {
+				position: absolute;
+				font-size: 5rem;
+				top: 2%;
+				right: 2%;
+				cursor: pointer;
+				color: var(--color-darkone);
+				&:hover {
+					color: var(--color-mediumone);
+				}
+			}
+		}
+		.swiper-pagination {
+			position: absolute;
+			left: -30%;
+		}
 	}
 }
 
