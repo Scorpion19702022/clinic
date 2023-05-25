@@ -5,6 +5,15 @@ const burgerBtn = document.querySelector('.burger')
 const bars = document.querySelector('.fa-bars')
 const cross = document.querySelector('.fa-xmark')
 
+const teamInfo = document.querySelector('.teams')
+const sliderbtn = document.querySelector('.btnteams')
+const slider = document.querySelector('.teamswiper')
+const crossSlider = document.querySelectorAll('.crosscard')
+
+console.log(teamInfo)
+
+// =======================================
+
 const handleBtn = () => {
 	nav.classList.toggle('actionnav')
 	bars.classList.toggle('hide')
@@ -17,6 +26,8 @@ const handleBtn = () => {
 		})
 	})
 }
+
+// =======================================
 
 const swiper = new Swiper('.teamswiper', {
 	slidesPerView: 1,
@@ -36,4 +47,21 @@ const swiper = new Swiper('.teamswiper', {
 	},
 })
 
+// =======================================
+
+crossSlider.forEach(el => {
+	el.addEventListener('click', function () {
+		teamInfo.classList.remove('teamsscale')
+		slider.classList.add('swiperscale')
+	})
+})
+
+const viewSlider = () => {
+	teamInfo.classList.add('teamsscale')
+	slider.classList.remove('swiperscale')
+}
+
+// =======================================
+
 burgerBtn.addEventListener('click', handleBtn)
+sliderbtn.addEventListener('click', viewSlider)

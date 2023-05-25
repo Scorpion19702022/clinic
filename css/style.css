@@ -736,12 +736,6 @@ nav .wrapper .burger .hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .sectionteams .teams__img {
   height: 80%;
@@ -798,9 +792,9 @@ nav .wrapper .burger .hide {
       align-self: center;
 }
 .sectionteams .teamsscale {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  display: none;
+  width: 0%;
+  height: 0%;
+  visibility: hidden;
 }
 .sectionteams .swiper {
   position: relative;
@@ -869,6 +863,9 @@ nav .wrapper .burger .hide {
 .sectionteams .swiper .swiper-pagination {
   position: absolute;
   left: -30%;
+}
+.sectionteams .swiperscale {
+  visibility: hidden;
 }
 
 @media (max-width: 576px) {

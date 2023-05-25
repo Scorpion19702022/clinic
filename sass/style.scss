@@ -471,8 +471,6 @@ nav {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		transform: scale(1);
-		transition: transform 0.5s ease-in-out;
 		&__img {
 			height: 80%;
 			margin-bottom: 0.4em;
@@ -515,8 +513,9 @@ nav {
 		}
 	}
 	.teamsscale {
-		transform: scale(0);
-		display: none;
+		width: 0%;
+		height: 0%;
+		visibility: hidden;
 	}
 
 	.swiper {
@@ -572,6 +571,10 @@ nav {
 			position: absolute;
 			left: -30%;
 		}
+	}
+
+	.swiperscale {
+		visibility: hidden;
 	}
 }
 
