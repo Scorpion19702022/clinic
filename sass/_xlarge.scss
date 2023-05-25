@@ -99,10 +99,10 @@
 
 	.sectionteams {
 		.teams {
-			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			height: 80%;
+			width: 85%;
 			&__img {
 				height: 100%;
 			}

@@ -512,11 +512,6 @@ nav {
 			align-self: center;
 		}
 	}
-	.teamsscale {
-		width: 0%;
-		height: 0%;
-		visibility: hidden;
-	}
 
 	.swiper {
 		position: relative;
@@ -538,7 +533,6 @@ nav {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				// align-self: flex-end;
 				bottom: 0;
 				right: 0;
 				width: 43%;
@@ -573,8 +567,8 @@ nav {
 		}
 	}
 
-	.swiperscale {
-		visibility: hidden;
+	.swiperview {
+		display: none;
 	}
 }
 

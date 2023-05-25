@@ -34,7 +34,7 @@ const swiper = new Swiper('.teamswiper', {
 	spaceBetween: 30,
 	loop: true,
 	autoplay: {
-		delay: 2500,
+		delay: 3200,
 		disableOnInteraction: false,
 	},
 	pagination: {
@@ -45,20 +45,37 @@ const swiper = new Swiper('.teamswiper', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+	breakpoints: {
+		992: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+			slidesPerGroup: 2,
+		},
+		1200: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+			slidesPerGroup: 2,
+		},
+		1400: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+			slidesPerGroup: 3,
+		},
+	},
 })
 
 // =======================================
 
 crossSlider.forEach(el => {
 	el.addEventListener('click', function () {
-		teamInfo.classList.remove('teamsscale')
-		slider.classList.add('swiperscale')
+		teamInfo.classList.remove('swiperview')
+		slider.classList.add('swiperview')
 	})
 })
 
 const viewSlider = () => {
-	teamInfo.classList.add('teamsscale')
-	slider.classList.remove('swiperscale')
+	teamInfo.classList.add('swiperview')
+	slider.classList.remove('swiperview')
 }
 
 // =======================================

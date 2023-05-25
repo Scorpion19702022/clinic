@@ -118,5 +118,12 @@
 				width: 50%;
 			}
 		}
+		.swiper {
+			.card {
+				&__text {
+					width: 47%;
+				}
+			}
+		}
 	}
 }

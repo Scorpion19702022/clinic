@@ -159,5 +159,21 @@
 				}
 			}
 		}
+
+		.swiper {
+			.card {
+				&__text {
+					bottom: 8%;
+					width: 100%;
+					text-align: center;
+					align-items: center;
+					border-top-left-radius: 0em;
+				}
+			}
+			.swiper-pagination {
+				position: absolute;
+				left: 0%;
+			}
+		}
 	}
 }
