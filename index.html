@@ -15,6 +15,8 @@
 
     <script src="https://kit.fontawesome.com/2ab53ed4ce.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -37,7 +39,7 @@
                 <a href="#Aboutus" class="navbar__link">O nas</a>
                 <a href="#Offer" class="navbar__link">Oferta</a>
                 <a href="./teams.html" class="navbar__link">Zespół</a>
-                <a href="#" class="navbar__link">Opinie</a>
+                <a href="#Opinions" class="navbar__link">Opinie</a>
                 <a href="#" class="navbar__link">Kotakt</a>
             </div>
             <div class="burger">
@@ -250,10 +252,54 @@
                     culpa voluptatem nesciunt aliquam numquam.</p>
             </div>
         </section>
+
+        <section class="sectionopinions" id="Opinions">
+            <div class="heading">
+                <h1 class="heading__head">Opinie naszych pacjentów</h1>
+                <div class="line"></div>
+                <p class="heading__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit iste
+                    quam.</p>
+            </div>
+
+            <div class="swiper opinionswiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cardopinion">
+                        <div class="cardopinion__card">
+                            <i class="fa-solid fa-quote-right"></i>
+                            <p class="cardopinion__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nisi unde rerum, assumenda eum aliquid modi? Et aliquam possimus mollitia pariatur.</p>
+                            <p class="cardopinion__card--name">Mieczysław</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide cardopinion">
+                        <div class="cardopinion__card">
+                            <i class="fa-solid fa-quote-right"></i>
+                            <p class="cardopinion__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nisi unde rerum, assumenda eum aliquid modi? Et aliquam possimus mollitia pariatur.</p>
+                            <p class="cardopinion__card--name">Bożena</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide cardopinion">
+                        <div class="cardopinion__card">
+                            <i class="fa-solid fa-quote-right"></i>
+                            <p class="cardopinion__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nisi unde rerum, assumenda eum aliquid modi? Et aliquam possimus mollitia pariatur.</p>
+                            <p class="cardopinion__card--name">Paulina</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
     </main>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

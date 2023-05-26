@@ -572,6 +572,86 @@ nav {
 	}
 }
 
+// ---OPINIONS---
+
+.sectionopinions {
+	padding: 2em 2em 4em 2em;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	border-top: 0.04em solid var(--color-mediumone);
+	.heading {
+		width: 100%;
+		margin-bottom: 3em;
+		&__head {
+			font-size: 3.8rem;
+			transform: translateY(80%);
+			opacity: 0;
+			transition: transform 0.5s ease-in-out, opacity 1.8s ease-in-out;
+		}
+		.line {
+			width: 100%;
+		}
+	}
+	.viewboxheading {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	.swiper {
+		position: relative;
+		width: 80%;
+		height: 240px;
+		.swiper-wrapper {
+			width: 80%;
+			height: 100%;
+			.cardopinion {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&__card {
+					position: relative;
+					width: 80%;
+					height: 70%;
+					padding: 2em;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					border: 0.04em solid var(--color-mediumone);
+					box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+					i {
+						position: absolute;
+						top: -12%;
+						left: -8%;
+						padding: 0.1em;
+						font-size: 6rem;
+						color: var(--color-mediumone);
+						background-color: var(--color-white);
+					}
+					&--text {
+						font-size: 1.8rem;
+						font-weight: 100;
+						font-style: italic;
+						margin-bottom: 0.8em;
+					}
+					&--name {
+						font-size: 1.4rem;
+						align-self: flex-end;
+					}
+				}
+			}
+		}
+		.swiper-pagination {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}
+
 @import './small';
 @import './medium';
 @import './large';

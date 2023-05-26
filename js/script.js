@@ -34,6 +34,10 @@ const logoOffer = document.querySelector('.infooffer__img')
 
 // ====================================================
 
+const headingOpinios = document.querySelector('.heading__head')
+
+// ====================================================
+
 const scrollInAboutUs = () => {
 	console.log(window.scrollY)
 	setTimeout(() => {
@@ -57,6 +61,13 @@ const scrollInAboutUs = () => {
 			logoOffer.classList.remove('actioninfooffer')
 		}
 	}, 300)
+	setTimeout(() => {
+		if (window.scrollY >= 2000) {
+			headingOpinios.classList.add('viewboxheading')
+		} else {
+			headingOpinios.classList.remove('viewboxheading')
+		}
+	}, 800)
 }
 
 // ====================================================
@@ -151,6 +162,21 @@ const addStylesAccordion = () => {
 		el.classList.remove('actionbtn')
 	})
 }
+
+// ====================================================
+
+const swiper = new Swiper('.opinionswiper', {
+	slidesPerView: 1,
+	spaceBetween: 50,
+	loop: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+	},
+})
 
 // ====================================================
 

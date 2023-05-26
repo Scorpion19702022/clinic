@@ -863,6 +863,113 @@ nav .wrapper .burger .hide {
   display: none;
 }
 
+.sectionopinions {
+  padding: 2em 2em 4em 2em;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 0.04em solid var(--color-mediumone);
+}
+.sectionopinions .heading {
+  width: 100%;
+  margin-bottom: 3em;
+}
+.sectionopinions .heading__head {
+  font-size: 3.8rem;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+  opacity: 0;
+  -webkit-transition: opacity 1.8s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 1.8s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 1.8s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 1.8s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.sectionopinions .heading .line {
+  width: 100%;
+}
+.sectionopinions .viewboxheading {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+.sectionopinions .swiper {
+  position: relative;
+  width: 80%;
+  height: 240px;
+}
+.sectionopinions .swiper .swiper-wrapper {
+  width: 80%;
+  height: 100%;
+}
+.sectionopinions .swiper .swiper-wrapper .cardopinion {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sectionopinions .swiper .swiper-wrapper .cardopinion__card {
+  position: relative;
+  width: 80%;
+  height: 70%;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.04em solid var(--color-mediumone);
+  -webkit-box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+          box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+}
+.sectionopinions .swiper .swiper-wrapper .cardopinion__card i {
+  position: absolute;
+  top: -12%;
+  left: -8%;
+  padding: 0.1em;
+  font-size: 6rem;
+  color: var(--color-mediumone);
+  background-color: var(--color-white);
+}
+.sectionopinions .swiper .swiper-wrapper .cardopinion__card--text {
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-style: italic;
+  margin-bottom: 0.8em;
+}
+.sectionopinions .swiper .swiper-wrapper .cardopinion__card--name {
+  font-size: 1.4rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.sectionopinions .swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+}
+
 @media (max-width: 576px) {
   nav .wrapper {
     padding: 0em 1em;
