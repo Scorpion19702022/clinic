@@ -1147,6 +1147,12 @@ nav .wrapper .burger .hide {
   .sectionoffer .infooffer__text {
     font-size: 2rem;
   }
+  .sectionteams {
+    padding: 8em 2em 2em 2em;
+  }
+  .sectionteams .heading h1 {
+    font-size: 4.2rem;
+  }
   .sectionteams .swiper {
     width: 75%;
     height: 100%;
@@ -1283,6 +1289,9 @@ nav .wrapper .burger .hide {
             transform: translateX(-50%);
   }
   .sectionoffer .boxheading__heading {
+    font-size: 4.6rem;
+  }
+  .sectionteams .heading h1 {
     font-size: 4.6rem;
   }
   .sectionteams .teams {

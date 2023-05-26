@@ -98,6 +98,11 @@
 	}
 
 	.sectionteams {
+		.heading {
+			h1 {
+				font-size: 4.6rem;
+			}
+		}
 		.teams {
 			flex-direction: row;
 			justify-content: space-between;
