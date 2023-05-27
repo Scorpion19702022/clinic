@@ -1615,6 +1615,21 @@ nav .wrapper .burger .hide {
   .sectionteams .teams__info p {
     margin-left: 9em;
   }
+  .sectioncontact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectioncontact .wrapper {
+    width: 70%;
+  }
 }
 @media (min-width: 1400px) {
   nav .wrapper .logo {
