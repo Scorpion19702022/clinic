@@ -939,9 +939,8 @@ nav .wrapper .burger .hide {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -965,6 +964,9 @@ nav .wrapper .burger .hide {
   margin-bottom: 0.8em;
 }
 .sectionopinions .swiper .swiper-wrapper .cardopinion__card--name {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
   font-size: 1.4rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1139,6 +1141,22 @@ nav .wrapper .burger .hide {
   .sectionteams .swiper .swiper-pagination {
     position: absolute;
     left: 0%;
+  }
+  .sectionopinions .heading {
+    margin-bottom: 1.5em;
+  }
+  .sectionopinions .heading__head {
+    font-size: 2.2rem;
+  }
+  .sectionopinions .swiper {
+    width: 100%;
+    height: 300px;
+  }
+  .sectionopinions .swiper .swiper-wrapper .cardopinion__card {
+    height: 80%;
+  }
+  .sectionopinions .swiper .swiper-wrapper .cardopinion__card--text {
+    z-index: 1;
   }
 }
 @media (min-width: 768px) {

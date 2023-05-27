@@ -62,7 +62,7 @@ const scrollInAboutUs = () => {
 		}
 	}, 300)
 	setTimeout(() => {
-		if (window.scrollY >= 2000) {
+		if (window.scrollY >= 1560) {
 			headingOpinios.classList.add('viewboxheading')
 		} else {
 			headingOpinios.classList.remove('viewboxheading')

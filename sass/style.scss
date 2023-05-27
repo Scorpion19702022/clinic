@@ -619,7 +619,7 @@ nav {
 					padding: 2em;
 					display: flex;
 					flex-direction: column;
-					justify-content: space-between;
+					justify-content: space-around;
 					align-items: center;
 					border: 0.04em solid var(--color-mediumone);
 					box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
@@ -639,6 +639,9 @@ nav {
 						margin-bottom: 0.8em;
 					}
 					&--name {
+						position: absolute;
+						bottom: 5%;
+						right: 5%;
 						font-size: 1.4rem;
 						align-self: flex-end;
 					}
