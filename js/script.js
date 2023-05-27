@@ -170,7 +170,7 @@ const swiper = new Swiper('.opinionswiper', {
 	spaceBetween: 50,
 	loop: true,
 	autoplay: {
-		delay: 2500,
+		delay: 3000,
 		disableOnInteraction: false,
 	},
 	pagination: {
@@ -181,8 +181,13 @@ const swiper = new Swiper('.opinionswiper', {
 			slidesPerView: 2,
 			spaceBetween: 40,
 		},
-		1024: {
-			slidesPerView: 5,
+		1200: {
+			slidesPerView: 3,
+			spaceBetween: 50,
+		},
+		1400: {
+			slidesPerView: 4,
+			slidesPerGroup: 2,
 			spaceBetween: 50,
 		},
 	},

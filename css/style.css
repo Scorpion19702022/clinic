@@ -952,7 +952,7 @@ nav .wrapper .burger .hide {
   position: absolute;
   top: -12%;
   left: -8%;
-  padding: 0.1em;
+  padding: 0em 0.4em 0.1em 0em;
   font-size: 6rem;
   color: var(--color-mediumone);
   background-color: var(--color-white);
