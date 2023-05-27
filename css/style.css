@@ -111,7 +111,7 @@ button:hover {
   --color-mediumthree: #257ca3;
   --color-darkone: #373b3e;
   --color-dark: #000000;
-  --color-other: #9d1c5d;
+  --color-other: #8f102d;
 }
 
 html {
@@ -1190,7 +1190,7 @@ nav .wrapper .burger .hide {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 70%;
+    width: 90%;
     height: 100%;
     top: 0;
     padding: 0;
@@ -1285,6 +1285,16 @@ nav .wrapper .burger .hide {
   .sectionteams .swiper {
     width: 75%;
     height: 100%;
+  }
+  .sectionopinions .heading {
+    margin-bottom: 1.5em;
+  }
+  .sectionopinions .heading__head {
+    font-size: 4.2rem;
+  }
+  .sectionopinions .swiper {
+    width: 100%;
+    height: 300px;
   }
 }
 @media (min-width: 992px) {

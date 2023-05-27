@@ -176,6 +176,16 @@ const swiper = new Swiper('.opinionswiper', {
 	pagination: {
 		el: '.swiper-pagination',
 	},
+	breakpoints: {
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 40,
+		},
+		1024: {
+			slidesPerView: 5,
+			spaceBetween: 50,
+		},
+	},
 })
 
 // ====================================================
