@@ -1290,6 +1290,29 @@ nav .wrapper .burger .hide {
   .sectionopinions .swiper .swiper-wrapper .cardopinion__card--text {
     z-index: 1;
   }
+  .sectioncontact .wrapper .box {
+    height: 60%;
+    margin-bottom: 2.8em;
+  }
+  .sectioncontact .wrapper .box .contactbox {
+    margin-bottom: 0.4em;
+  }
+  .sectioncontact .wrapper .box .contactbox label {
+    font-size: 1.4rem;
+  }
+  .sectioncontact .wrapper .box .contactbox input {
+    padding: 0.6em 0.4em;
+  }
+  .sectioncontact .wrapper .box .contactbox p {
+    font-size: 1.6rem;
+  }
+  .sectioncontact .wrapper .box .contactbox .textarea {
+    max-height: 140px;
+    min-height: 140px;
+  }
+  .sectioncontact .wrapper .status {
+    top: -5%;
+  }
 }
 @media (min-width: 768px) {
   nav .navcontact {
