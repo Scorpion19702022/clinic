@@ -655,6 +655,56 @@ nav {
 	}
 }
 
+// ---CONTACT---
+
+.sectioncontact {
+	padding: 8em 2em 2em 2em;
+	overflow: hidden;
+	.wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.box {
+			width: 100%;
+			height: 75%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.status {
+			position: absolute;
+			top: 0;
+			padding: 1em 5em;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			visibility: hidden;
+			transform: translateY(-300%);
+			background-color: var(--color-mediumone);
+			transition: transform 0.3s ease-in-out, visibility 1s ease-in-out;
+			.statusinfo {
+				font-size: 2rem;
+				color: var(--color-white);
+			}
+		}
+		.sendsuccess {
+			visibility: visible;
+			transform: translateY(0%);
+		}
+		.senderror {
+			visibility: visible;
+			transform: translateY(0%);
+			background-color: var(--color-other);
+		}
+	}
+}
+
 @import './small';
 @import './medium';
 @import './large';

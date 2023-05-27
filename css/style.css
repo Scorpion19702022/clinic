@@ -976,6 +976,84 @@ nav .wrapper .burger .hide {
   bottom: 0;
 }
 
+.sectioncontact {
+  padding: 8em 2em 2em 2em;
+  overflow: hidden;
+}
+.sectioncontact .wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sectioncontact .wrapper .box {
+  width: 100%;
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sectioncontact .wrapper .status {
+  position: absolute;
+  top: 0;
+  padding: 1em 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
+  background-color: var(--color-mediumone);
+  -webkit-transition: visibility 1s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: visibility 1s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 1s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 1s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.sectioncontact .wrapper .status .statusinfo {
+  font-size: 2rem;
+  color: var(--color-white);
+}
+.sectioncontact .wrapper .sendsuccess {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.sectioncontact .wrapper .senderror {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  background-color: var(--color-other);
+}
+
 @media (max-width: 576px) {
   nav .wrapper {
     padding: 0em 1em;
