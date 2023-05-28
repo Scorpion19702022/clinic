@@ -112,6 +112,7 @@ button:hover {
   --color-darkone: #373b3e;
   --color-dark: #000000;
   --color-other: #8f102d;
+  --color-othererror: rgba(143, 16, 46, 0.2);
 }
 
 html {
@@ -1054,6 +1055,9 @@ nav .wrapper .burger .hide {
   margin-bottom: 0.4em;
   border: 0.04em solid var(--color-mediumthree);
 }
+.sectioncontact .wrapper .box .contactbox .backgrounderror {
+  background-color: var(--color-othererror);
+}
 .sectioncontact .wrapper .btncontact {
   width: 100%;
   display: -webkit-box;
@@ -1075,7 +1079,7 @@ nav .wrapper .burger .hide {
   top: 0;
   width: 50%;
   height: 10%;
-  padding: 1em 5em;
+  padding: 1em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1317,6 +1321,7 @@ nav .wrapper .burger .hide {
     min-height: 140px;
   }
   .sectioncontact .wrapper .status {
+    width: 100%;
     top: -5%;
   }
 }

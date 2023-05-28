@@ -22,6 +22,7 @@
 	--color-darkone: #373b3e;
 	--color-dark: #000000;
 	--color-other: #8f102d;
+	--color-othererror: rgba(143, 16, 46, 0.2);
 }
 
 html {
@@ -710,6 +711,9 @@ nav {
 					margin-bottom: 0.4em;
 					border: 0.04em solid var(--color-mediumthree);
 				}
+				.backgrounderror {
+					background-color: var(--color-othererror);
+				}
 			}
 		}
 
@@ -729,7 +733,7 @@ nav {
 			top: 0;
 			width: 50%;
 			height: 10%;
-			padding: 1em 5em;
+			padding: 1em 2em;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;

@@ -61,9 +61,11 @@ const send = () => {
 		errorName.textContent = 'Wypełnij pole'
 		errorMail.classList.remove('actionerror')
 		errorText.classList.remove('actionerror')
+		inputName.classList.add('backgrounderror')
 		setTimeout(() => {
 			sendStatus.classList.remove('senderror')
 			errorName.classList.remove('actionerror')
+			inputName.classList.remove('backgrounderror')
 			inputName.value = ''
 			inputMail.value = ''
 			textarea.value = ''
@@ -75,9 +77,31 @@ const send = () => {
 		errorMail.classList.remove('actionerror')
 		errorText.classList.add('actionerror')
 		errorText.textContent = 'Wypełnij pole'
+		textarea.classList.add('backgrounderror')
 		setTimeout(() => {
 			sendStatus.classList.remove('senderror')
 			errorText.classList.remove('actionerror')
+			textarea.classList.remove('backgrounderror')
+			inputName.value = ''
+			inputMail.value = ''
+			textarea.value = ''
+		}, 3000)
+	} else if (inputName.value === '' && re.test(inputMail.value) && textarea.value === '') {
+		sendStatus.classList.add('senderror')
+		textStatus.textContent = 'Bład wysłania wiadomości'
+		errorName.classList.add('actionerror')
+		errorName.textContent = 'Wypełnij pole'
+		errorMail.classList.remove('actionerror')
+		errorText.classList.add('actionerror')
+		errorText.textContent = 'Wypełnij pole'
+		inputName.classList.add('backgrounderror')
+		textarea.classList.add('backgrounderror')
+		setTimeout(() => {
+			sendStatus.classList.remove('senderror')
+			errorName.classList.remove('actionerror')
+			errorText.classList.remove('actionerror')
+			inputName.classList.remove('backgrounderror')
+			textarea.classList.remove('backgrounderror')
 			inputName.value = ''
 			inputMail.value = ''
 			textarea.value = ''
