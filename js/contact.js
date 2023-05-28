@@ -40,6 +40,14 @@ const handleBtn = () => {
 
 // =============================================
 
+const clean = () => {
+	inputName.value = ''
+	inputMail.value = ''
+	textarea.value = ''
+}
+
 // =============================================
 
 burgerBtn.addEventListener('click', handleBtn)
+
+btnClean.addEventListener('click', clean)
