@@ -1039,6 +1039,10 @@ nav .wrapper .burger .hide {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
+  visibility: hidden;
+}
+.sectioncontact .wrapper .box .contactbox .actionerror {
+  visibility: visible;
 }
 .sectioncontact .wrapper .box .contactbox .textarea {
   max-width: 100%;
@@ -1069,6 +1073,8 @@ nav .wrapper .burger .hide {
 .sectioncontact .wrapper .status {
   position: absolute;
   top: 0;
+  width: 50%;
+  height: 10%;
   padding: 1em 5em;
   display: -webkit-box;
   display: -ms-flexbox;

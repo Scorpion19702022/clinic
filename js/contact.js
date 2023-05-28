@@ -16,6 +16,7 @@ const errorMail = document.querySelector('.errormail')
 const errorText = document.querySelector('.errortext')
 
 const sendStatus = document.querySelector('.status')
+const textStatus = document.querySelector('.statusinfo')
 
 const btnSend = document.querySelector('.btnsend')
 const btnClean = document.querySelector('.btnclean')
@@ -40,6 +41,38 @@ const handleBtn = () => {
 
 // =============================================
 
+const send = () => {
+	if (inputName.value !== '' && re.test(inputMail.value) && textarea.value !== '') {
+		sendStatus.classList.add('sendsuccess')
+		textStatus.textContent = 'Wiadomość wysłana poprawnie'
+		errorName.classList.remove('actionerror')
+		errorMail.classList.remove('actionerror')
+		errorText.classList.remove('actionerror')
+		setTimeout(() => {
+			sendStatus.classList.remove('sendsuccess')
+			inputName.value = ''
+			inputMail.value = ''
+			textarea.value = ''
+		}, 3000)
+	} else if (inputName.value === '' && re.test(inputMail.value) && textarea.value !== '') {
+		sendStatus.classList.add('senderror')
+		textStatus.textContent = 'Bład wysłania wiadomości'
+		errorName.classList.add('actionerror')
+		errorName.textContent = 'Wypełnij pole'
+		errorMail.classList.remove('actionerror')
+		errorText.classList.remove('actionerror')
+		setTimeout(() => {
+			sendStatus.classList.remove('senderror')
+			errorName.classList.remove('actionerror')
+			inputName.value = ''
+			inputMail.value = ''
+			textarea.value = ''
+		}, 3000)
+	}
+}
+
+// =============================================
+
 const clean = () => {
 	inputName.value = ''
 	inputMail.value = ''
@@ -50,4 +83,5 @@ const clean = () => {
 
 burgerBtn.addEventListener('click', handleBtn)
 
+btnSend.addEventListener('click', send)
 btnClean.addEventListener('click', clean)
