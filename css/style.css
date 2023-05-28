@@ -1058,6 +1058,9 @@ nav .wrapper .burger .hide {
 .sectioncontact .wrapper .box .contactbox .backgrounderror {
   background-color: var(--color-othererror);
 }
+.sectioncontact .wrapper .box .contactbox .backgroundsuccess {
+  background-color: var(--color-lightfourBlend);
+}
 .sectioncontact .wrapper .btncontact {
   width: 100%;
   display: -webkit-box;
