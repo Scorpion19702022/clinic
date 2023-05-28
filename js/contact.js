@@ -155,16 +155,20 @@ const send = () => {
 		textStatus.textContent = 'Bład wysłania wiadomości'
 		errorName.classList.add('actionerror')
 		errorName.textContent = 'Wypełnij pole'
-		errorMail.classList.remove('actionerror')
+		errorMail.classList.add('actionerror')
+		errorMail.textContent = 'Niepoprawny adres'
 		errorText.classList.add('actionerror')
 		errorText.textContent = 'Wypełnij pole'
 		inputName.classList.add('backgrounderror')
+		inputMail.classList.add('backgrounderror')
 		textarea.classList.add('backgrounderror')
 		setTimeout(() => {
 			sendStatus.classList.remove('senderror')
 			errorName.classList.remove('actionerror')
+			errorMail.classList.remove('actionerror')
 			errorText.classList.remove('actionerror')
 			inputName.classList.remove('backgrounderror')
+			inputMail.classList.remove('backgrounderror')
 			textarea.classList.remove('backgrounderror')
 			inputName.value = ''
 			inputMail.value = ''
