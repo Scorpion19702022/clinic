@@ -738,21 +738,18 @@ nav {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			visibility: hidden;
 			transform: translateY(-300%);
-			background-color: var(--color-mediumone);
-			transition: transform 0.3s ease-in-out, visibility 1s ease-in-out;
+			transition: transform 0.3s ease-in-out;
 			.statusinfo {
 				font-size: 2rem;
 				color: var(--color-white);
 			}
 		}
 		.sendsuccess {
-			visibility: visible;
+			background-color: var(--color-mediumone);
 			transform: translateY(0%);
 		}
 		.senderror {
-			visibility: visible;
 			transform: translateY(0%);
 			background-color: var(--color-other);
 		}

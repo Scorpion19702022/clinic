@@ -1093,26 +1093,23 @@ nav .wrapper .burger .hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  visibility: hidden;
   -webkit-transform: translateY(-300%);
           transform: translateY(-300%);
-  background-color: var(--color-mediumone);
-  -webkit-transition: visibility 1s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: visibility 1s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, visibility 1s ease-in-out;
-  transition: transform 0.3s ease-in-out, visibility 1s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .sectioncontact .wrapper .status .statusinfo {
   font-size: 2rem;
   color: var(--color-white);
 }
 .sectioncontact .wrapper .sendsuccess {
-  visibility: visible;
+  background-color: var(--color-mediumone);
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
 .sectioncontact .wrapper .senderror {
-  visibility: visible;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   background-color: var(--color-other);
