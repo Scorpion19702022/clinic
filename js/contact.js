@@ -68,6 +68,20 @@ const send = () => {
 			inputMail.value = ''
 			textarea.value = ''
 		}, 3000)
+	} else if (inputName.value !== '' && re.test(inputMail.value) && textarea.value === '') {
+		sendStatus.classList.add('senderror')
+		textStatus.textContent = 'Bład wysłania wiadomości'
+		errorName.classList.remove('actionerror')
+		errorMail.classList.remove('actionerror')
+		errorText.classList.add('actionerror')
+		errorText.textContent = 'Wypełnij pole'
+		setTimeout(() => {
+			sendStatus.classList.remove('senderror')
+			errorText.classList.remove('actionerror')
+			inputName.value = ''
+			inputMail.value = ''
+			textarea.value = ''
+		}, 3000)
 	}
 }
 
