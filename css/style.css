@@ -101,12 +101,12 @@ button:hover {
 :root {
   --color-white: #ffffff;
   --color-whiteBlend: rgba(255, 255, 255, 0.7);
-  --color-lightone: #dcf3ff;
-  --color-lighttwo: #baf2ef;
-  --color-lightthree: #a2d2df;
-  --color-lightfour: #86cecb;
-  --color-lightfourBlend: rgba(134, 206, 202, 0.7);
-  --color-mediumone: #396d7c;
+  --color-lightone: #ddf3ff;
+  --color-lighttwo: #c7ecff;
+  --color-lightthree: #b1e4ff;
+  --color-lightfour: #90d9ff;
+  --color-lightfourBlend: rgba(144, 216, 255, 0.7);
+  --color-mediumone: #1c2b33;
   --color-mediumtwo: #137a7f;
   --color-mediumthree: #257ca3;
   --color-darkone: #373b3e;
