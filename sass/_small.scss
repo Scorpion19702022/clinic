@@ -231,12 +231,12 @@
 
 	footer {
 		.wrapper {
+			.heading {
+				font-size: 3.6rem;
+				margin-bottom: 0.4em;
+			}
 			.info {
 				width: 100%;
-				&__heading {
-					font-size: 3.6rem;
-					margin-bottom: 0.4em;
-				}
 				.address {
 					display: flex;
 					justify-content: space-around;

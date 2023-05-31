@@ -1139,6 +1139,10 @@ footer .wrapper {
       -ms-flex-pack: center;
           justify-content: center;
 }
+footer .wrapper .heading {
+  font-size: 3rem;
+  color: var(--color-lighttwo);
+}
 footer .wrapper .info {
   width: 100%;
   display: -webkit-box;
@@ -1156,10 +1160,6 @@ footer .wrapper .info {
           justify-content: center;
   border-bottom: 0.04em solid var(--color-lightfour);
   margin-bottom: 1em;
-}
-footer .wrapper .info__heading {
-  font-size: 3rem;
-  color: var(--color-lighttwo);
 }
 footer .wrapper .info .address {
   width: 100%;
@@ -1444,12 +1444,12 @@ footer .wrapper .years .year {
     width: 100%;
     top: -5%;
   }
-  footer .wrapper .info {
-    width: 100%;
-  }
-  footer .wrapper .info__heading {
+  footer .wrapper .heading {
     font-size: 3.6rem;
     margin-bottom: 0.4em;
+  }
+  footer .wrapper .info {
+    width: 100%;
   }
   footer .wrapper .info .address {
     display: -webkit-box;
@@ -1613,6 +1613,33 @@ footer .wrapper .years .year {
   .sectionopinions .swiper {
     width: 100%;
     height: 300px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .wrapper {
+    width: 70%;
+  }
+  footer .wrapper .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 @media (min-width: 992px) {
