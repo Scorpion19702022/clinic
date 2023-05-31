@@ -163,7 +163,32 @@
 			.info {
 				display: flex;
 				flex-direction: row;
+				border-bottom: 0;
+				.address {
+					&__box {
+						flex-direction: column;
+					}
+				}
+				.media {
+					&__box {
+						flex-direction: column;
+						&--heading {
+							width: 100%;
+							text-align: center;
+							font-size: 2.4rem;
+							margin-bottom: 1em;
+						}
+						&--socialmedia {
+							width: 100%;
+							justify-content: space-between;
+						}
+					}
+				}
 			}
+		}
+		.years {
+			padding-top: 2em;
+			border-top: 0.04em solid var(--color-lightfour);
 		}
 	}
 }

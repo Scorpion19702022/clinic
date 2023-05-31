@@ -1640,6 +1640,35 @@ footer .wrapper .years .year {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    border-bottom: 0;
+  }
+  footer .wrapper .info .address__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .wrapper .info .media__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .wrapper .info .media__box--heading {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 1em;
+  }
+  footer .wrapper .info .media__box--socialmedia {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .years {
+    padding-top: 2em;
+    border-top: 0.04em solid var(--color-lightfour);
   }
 }
 @media (min-width: 992px) {
