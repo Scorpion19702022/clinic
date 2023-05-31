@@ -228,4 +228,32 @@
 			}
 		}
 	}
+
+	footer {
+		.wrapper {
+			.info {
+				&__heading {
+					font-size: 3.6rem;
+					margin-bottom: 0.4em;
+				}
+				.address {
+					flex-direction: column;
+					justify-content: space-around;
+					margin-bottom: 0.8em;
+					p {
+						// display: flex;
+						padding: 0;
+						align-items: center;
+						align-self: flex-start;
+					}
+					i {
+						// text-align: left;
+					}
+				}
+				.media {
+					width: 100%;
+				}
+			}
+		}
+	}
 }

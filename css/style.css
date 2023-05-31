@@ -1163,6 +1163,8 @@ footer .wrapper .info__heading {
 }
 footer .wrapper .info .address {
   width: 100%;
+}
+footer .wrapper .info .address__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1170,16 +1172,20 @@ footer .wrapper .info .address {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-footer .wrapper .info .address p {
+footer .wrapper .info .address__box p {
   padding: 0.4em;
   color: var(--color-lightone);
 }
-footer .wrapper .info .address i {
+footer .wrapper .info .address__box i {
   margin-right: 0.2em;
   color: var(--color-lightfour);
 }
 footer .wrapper .info .media {
   width: 50%;
+  padding: 0.1em;
+  margin-bottom: 1em;
+}
+footer .wrapper .info .media__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1188,14 +1194,12 @@ footer .wrapper .info .media {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 0.1em;
-  margin-bottom: 1em;
 }
-footer .wrapper .info .media__heading {
+footer .wrapper .info .media__box--heading {
   font-size: 2rem;
   color: var(--color-lightone);
 }
-footer .wrapper .info .media__socialmedia {
+footer .wrapper .info .media__box--socialmedia {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1203,14 +1207,14 @@ footer .wrapper .info .media__socialmedia {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-footer .wrapper .info .media__socialmedia i {
+footer .wrapper .info .media__box--socialmedia i {
   font-size: 2em;
   color: var(--color-lighttwo);
   cursor: pointer;
   -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
-footer .wrapper .info .media__socialmedia i:hover {
+footer .wrapper .info .media__box--socialmedia i:hover {
   color: var(--color-other);
 }
 footer .wrapper .years {
@@ -1439,6 +1443,30 @@ footer .wrapper .years .year {
   .sectioncontact .wrapper .status {
     width: 100%;
     top: -5%;
+  }
+  footer .wrapper .info__heading {
+    font-size: 3.6rem;
+    margin-bottom: 0.4em;
+  }
+  footer .wrapper .info .address {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 0.8em;
+  }
+  footer .wrapper .info .address p {
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  footer .wrapper .info .media {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
