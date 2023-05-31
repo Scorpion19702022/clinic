@@ -38,6 +38,11 @@ const headingOpinios = document.querySelector('.heading__head')
 
 // ====================================================
 
+const spanInFooter = document.querySelector('.year')
+const currentYear = new Date().getFullYear()
+
+// ====================================================
+
 const scrollInAboutUs = () => {
 	console.log(window.scrollY)
 	setTimeout(() => {
@@ -192,6 +197,14 @@ const swiper = new Swiper('.opinionswiper', {
 		},
 	},
 })
+
+// ====================================================
+
+const yearFooter = () => {
+	spanInFooter.innerHTML = currentYear
+}
+
+yearFooter()
 
 // ====================================================
 
