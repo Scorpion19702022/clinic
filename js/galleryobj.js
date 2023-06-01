@@ -5,8 +5,17 @@ const burgerBtn = document.querySelector('.burger')
 const bars = document.querySelector('.fa-bars')
 const cross = document.querySelector('.fa-xmark')
 
+// ====================================================
+
 const body = document.querySelector('body')
 const viewText = document.querySelectorAll('.slidertext')
+
+// ====================================================
+
+const spanInFooter = document.querySelector('.year')
+const currentYear = new Date().getFullYear()
+
+// ====================================================
 
 console.log(viewText)
 
@@ -22,6 +31,8 @@ const loadText = () => {
 	}, 500)
 }
 
+// ====================================================
+
 const handleBtn = () => {
 	nav.classList.toggle('actionnav')
 	bars.classList.toggle('hide')
@@ -34,6 +45,8 @@ const handleBtn = () => {
 		})
 	})
 }
+
+// ====================================================
 
 const swiper = new Swiper('.sliders', {
 	slidesPerView: 1,
@@ -52,5 +65,15 @@ const swiper = new Swiper('.sliders', {
 		prevEl: '.swiper-button-prev',
 	},
 })
+
+// ====================================================
+
+const yearFooter = () => {
+	spanInFooter.innerHTML = currentYear
+}
+
+yearFooter()
+
+// ====================================================
 
 burgerBtn.addEventListener('click', handleBtn)

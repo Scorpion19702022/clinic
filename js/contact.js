@@ -26,6 +26,11 @@ const re =
 
 // =============================================
 
+const spanInFooter = document.querySelector('.year')
+const currentYear = new Date().getFullYear()
+
+// =============================================
+
 const handleBtn = () => {
 	nav.classList.toggle('actionnav')
 	bars.classList.toggle('hide')
@@ -286,6 +291,14 @@ const clean = e => {
 	textarea.value = ''
 	e.preventDefault()
 }
+
+// =============================================
+
+const yearFooter = () => {
+	spanInFooter.innerHTML = currentYear
+}
+
+yearFooter()
 
 // =============================================
 

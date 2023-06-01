@@ -5,12 +5,19 @@ const burgerBtn = document.querySelector('.burger')
 const bars = document.querySelector('.fa-bars')
 const cross = document.querySelector('.fa-xmark')
 
+// =======================================
+
 const teamInfo = document.querySelector('.teams')
 const sliderbtn = document.querySelector('.btnteams')
 const slider = document.querySelector('.teamswiper')
 const crossSlider = document.querySelectorAll('.crosscard')
 
-console.log(teamInfo)
+// console.log(teamInfo)
+
+// =======================================
+
+const spanInFooter = document.querySelector('.year')
+const currentYear = new Date().getFullYear()
 
 // =======================================
 
@@ -77,6 +84,14 @@ const viewSlider = () => {
 	teamInfo.classList.add('swiperview')
 	slider.classList.remove('swiperview')
 }
+
+// =======================================
+
+const yearFooter = () => {
+	spanInFooter.innerHTML = currentYear
+}
+
+yearFooter()
 
 // =======================================
 
