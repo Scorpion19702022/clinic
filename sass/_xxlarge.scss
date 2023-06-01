@@ -126,4 +126,17 @@
 			}
 		}
 	}
+
+	footer {
+		.wrapper {
+			.info {
+				width: 40%;
+				.media {
+					&__box {
+						width: 70%;
+					}
+				}
+			}
+		}
+	}
 }

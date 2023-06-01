@@ -1634,6 +1634,9 @@ footer .wrapper .years .year {
   footer .wrapper {
     width: 100%;
   }
+  footer .wrapper .heading {
+    font-size: 4rem;
+  }
   footer .wrapper .info {
     width: 70%;
     display: -webkit-box;
@@ -1706,6 +1709,9 @@ footer .wrapper .years .year {
   }
   .sectionteams .swiper .swiper-pagination {
     left: 0%;
+  }
+  footer .wrapper .info {
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
@@ -1974,5 +1980,11 @@ footer .wrapper .years .year {
   }
   .sectionteams .swiper .card__text {
     width: 47%;
+  }
+  footer .wrapper .info {
+    width: 40%;
+  }
+  footer .wrapper .info .media__box {
+    width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */
