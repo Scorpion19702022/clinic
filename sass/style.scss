@@ -774,6 +774,7 @@ footer {
 		.heading {
 			font-size: 3rem;
 			color: var(--color-lighttwo);
+			margin-bottom: 0.6em;
 		}
 		.info {
 			width: 100%;
@@ -781,10 +782,10 @@ footer {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			border-bottom: 0.04em solid var(--color-lightfour);
-			margin-bottom: 1em;
+			margin-bottom: 0.8em;
 			.address {
 				width: 100%;
+				margin-bottom: 1em;
 				&__box {
 					display: flex;
 					justify-content: space-between;
@@ -801,7 +802,7 @@ footer {
 			.media {
 				width: 50%;
 				padding: 0.1em;
-				margin-bottom: 1em;
+				margin-bottom: 0.4em;
 				&__box {
 					display: flex;
 					justify-content: space-around;
@@ -832,7 +833,9 @@ footer {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			border-top: 0.02em solid var(--color-lightthree);
 			p {
+				padding-top: 1em;
 				font-size: 1.4em;
 				color: var(--color-lighttwo);
 			}

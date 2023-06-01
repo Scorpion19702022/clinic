@@ -242,7 +242,7 @@
 					justify-content: space-around;
 					align-items: center;
 					padding-bottom: 1em;
-					border-bottom: 0.02em solid var(--color-lightfour);
+					border-bottom: 0.02em solid var(--color-lightthree);
 					&__box {
 						flex-direction: column;
 						p {
@@ -251,7 +251,6 @@
 					}
 				}
 				.media {
-					padding-top: 1em;
 					width: 100%;
 				}
 			}

@@ -1142,6 +1142,7 @@ footer .wrapper {
 footer .wrapper .heading {
   font-size: 3rem;
   color: var(--color-lighttwo);
+  margin-bottom: 0.6em;
 }
 footer .wrapper .info {
   width: 100%;
@@ -1158,11 +1159,11 @@ footer .wrapper .info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 0.04em solid var(--color-lightfour);
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 footer .wrapper .info .address {
   width: 100%;
+  margin-bottom: 1em;
 }
 footer .wrapper .info .address__box {
   display: -webkit-box;
@@ -1183,7 +1184,7 @@ footer .wrapper .info .address__box i {
 footer .wrapper .info .media {
   width: 50%;
   padding: 0.1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.4em;
 }
 footer .wrapper .info .media__box {
   display: -webkit-box;
@@ -1228,8 +1229,10 @@ footer .wrapper .years {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 0.02em solid var(--color-lightthree);
 }
 footer .wrapper .years p {
+  padding-top: 1em;
   font-size: 1.4em;
   color: var(--color-lighttwo);
 }
@@ -1461,7 +1464,7 @@ footer .wrapper .years .year {
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 1em;
-    border-bottom: 0.02em solid var(--color-lightfour);
+    border-bottom: 0.02em solid var(--color-lightthree);
   }
   footer .wrapper .info .address__box {
     -webkit-box-orient: vertical;
@@ -1473,7 +1476,6 @@ footer .wrapper .years .year {
     padding: 0.1em;
   }
   footer .wrapper .info .media {
-    padding-top: 1em;
     width: 100%;
   }
 }
