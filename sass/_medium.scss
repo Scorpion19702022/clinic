@@ -29,6 +29,10 @@
 				a {
 					font-size: 2rem;
 				}
+				.scrollactive {
+					color: var(--color-mediumtwo);
+					border-bottom: 0.08em solid var(--color-mediumtwo);
+				}
 			}
 			.burger {
 				display: none;
@@ -43,7 +47,7 @@
 			// z-index: 1;
 		}
 		.image {
-			height: 70%;
+			height: 62%;
 			width: 100%;
 			img {
 				height: 100%;

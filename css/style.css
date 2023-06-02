@@ -1521,6 +1521,10 @@ footer .wrapper .years .year {
   nav .wrapper .navbar a {
     font-size: 2rem;
   }
+  nav .wrapper .navbar .scrollactive {
+    color: var(--color-mediumtwo);
+    border-bottom: 0.08em solid var(--color-mediumtwo);
+  }
   nav .wrapper .burger {
     display: none;
   }
@@ -1532,7 +1536,7 @@ footer .wrapper .years .year {
     margin-bottom: 0.5em;
   }
   .sectionhome .image {
-    height: 70%;
+    height: 62%;
     width: 100%;
   }
   .sectionhome .image img {
@@ -1678,6 +1682,9 @@ footer .wrapper .years .year {
     width: 23%;
     height: 23%;
   }
+  .sectionhome .image {
+    height: 74%;
+  }
   .sectionaboutus .infomobile .infocount i {
     font-size: 4rem;
   }
@@ -1758,7 +1765,7 @@ footer .wrapper .years .year {
     opacity: 1;
   }
   .sectionhome .image {
-    width: 55%;
+    width: 50%;
     height: 100%;
     padding: 4em 1em;
   }
