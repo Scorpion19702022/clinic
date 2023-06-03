@@ -44,7 +44,7 @@ const currentYear = new Date().getFullYear()
 // ====================================================
 
 const scrollInAboutUs = () => {
-	console.log(window.scrollY)
+	// console.log(window.scrollY)
 	setTimeout(() => {
 		if (window.scrollY >= 520) {
 			actionAbout.classList.add('actionaboutus')
