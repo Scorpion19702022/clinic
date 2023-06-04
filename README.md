@@ -14,9 +14,11 @@ Design of an imaginary medical clinic. The website contains subpages. I put the 
 - CSS/SASS/BEM
 - JavaScript
 
-<h5 align="center">
-### screenshot for the mobile version:
-</h5>
+---
+
+<h3 align="center">
+screenshot for the mobile version:
+</h3>
 
 <p align="center">
     <img src="./img/for readme/mobile.jpg" alt="screenshot">
@@ -24,7 +26,9 @@ Design of an imaginary medical clinic. The website contains subpages. I put the 
 
 ---
 
-### screenshot for the desktop version:
+<h3 align="center">
+screenshot for the desktop version:
+</h3>
 
 <p align="center">
     <img src="./img/for readme/desktop.jpg" alt="screenshot">
