@@ -1523,8 +1523,8 @@ footer .wrapper .years .year {
     font-size: 2rem;
   }
   nav .wrapper .navbar .scrollactive {
-    color: var(--color-mediumtwo);
-    border-bottom: 0.08em solid var(--color-mediumtwo);
+    color: var(--color-mediumone);
+    font-weight: bold;
   }
   nav .wrapper .burger {
     display: none;
