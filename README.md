@@ -13,3 +13,11 @@ Design of an imaginary medical clinic. The website contains subpages. I put the 
 </p>
 
 ---
+
+### screenshot for the desktop version:
+
+<p align="center">
+    <img src="./img/for readme/desktop.jpg" alt="screenshot">
+</p>
+
+---
