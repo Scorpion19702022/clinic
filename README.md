@@ -9,7 +9,7 @@ Design of an imaginary medical clinic. The website contains subpages. I put the 
 ### screenshot for the mobile version:
 
 <p align="center">
-    <img src="./img/for redme/mobile.jpg" alt="Screenshot">
+    <img src="./img/for readme/mobile.jpg" alt="screenshot">
 </p>
 
 ---
