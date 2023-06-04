@@ -583,6 +583,7 @@ nav {
 	align-items: center;
 	text-align: center;
 	flex-direction: column;
+	background-color: var(--color-lightone);
 	border-top: 0.04em solid var(--color-mediumone);
 	.heading {
 		width: 100%;
@@ -623,7 +624,7 @@ nav {
 					justify-content: space-around;
 					align-items: center;
 					border: 0.04em solid var(--color-mediumone);
-					box-shadow: 0.4em 0.4em 0em var(--color-lightfour);
+					box-shadow: 0.4em 0.4em 0em var(--color-mediumone);
 					i {
 						position: absolute;
 						top: -12%;
@@ -631,7 +632,7 @@ nav {
 						padding: 0em 0.4em 0.1em 0em;
 						font-size: 6rem;
 						color: var(--color-mediumone);
-						background-color: var(--color-white);
+						background-color: var(--color-lightone);
 					}
 					&--text {
 						font-size: 1.8rem;
