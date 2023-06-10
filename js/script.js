@@ -93,6 +93,7 @@ const handleBtn = () => {
 	nav.classList.toggle('actionnav')
 	bars.classList.toggle('hide')
 	cross.classList.toggle('hide')
+	document.body.classList.toggle('stickybody')
 	links.forEach(el => {
 		el.addEventListener('click', () => {
 			nav.classList.remove('actionnav')
