@@ -78,9 +78,6 @@ const send = e => {
 			sendStatus.classList.remove('senderror')
 			errorName.classList.remove('actionerror')
 			inputName.classList.remove('backgrounderror')
-			inputName.value = ''
-			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value !== '' && re.test(inputMail.value) && textarea.value === '') {
 		sendStatus.classList.add('senderror')
@@ -94,9 +91,6 @@ const send = e => {
 			sendStatus.classList.remove('senderror')
 			errorText.classList.remove('actionerror')
 			textarea.classList.remove('backgrounderror')
-			inputName.value = ''
-			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value === '' && re.test(inputMail.value) && textarea.value === '') {
 		sendStatus.classList.add('senderror')
@@ -114,9 +108,6 @@ const send = e => {
 			errorText.classList.remove('actionerror')
 			inputName.classList.remove('backgrounderror')
 			textarea.classList.remove('backgrounderror')
-			inputName.value = ''
-			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value === '' && inputMail.value === '' && textarea.value === '') {
 		sendStatus.classList.add('senderror')
@@ -138,9 +129,6 @@ const send = e => {
 			inputName.classList.remove('backgrounderror')
 			inputMail.classList.remove('backgrounderror')
 			textarea.classList.remove('backgrounderror')
-			inputName.value = ''
-			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value !== '' && inputMail.value === '' && textarea.value === '') {
 		sendStatus.classList.add('senderror')
@@ -158,9 +146,6 @@ const send = e => {
 			errorText.classList.remove('actionerror')
 			inputMail.classList.remove('backgrounderror')
 			textarea.classList.remove('backgrounderror')
-			inputName.value = ''
-			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value === '' && inputMail.value === '' && textarea.value !== '') {
 		sendStatus.classList.add('senderror')
@@ -179,9 +164,6 @@ const send = e => {
 			errorMail.classList.remove('actionerror')
 			inputName.classList.remove('backgrounderror')
 			inputMail.classList.remove('backgrounderror')
-			inputName.value = ''
-			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value === '' && inputMail.value !== '' && textarea.value === '') {
 		sendStatus.classList.add('senderror')
@@ -203,9 +185,7 @@ const send = e => {
 			inputName.classList.remove('backgrounderror')
 			inputMail.classList.remove('backgrounderror')
 			textarea.classList.remove('backgrounderror')
-			inputName.value = ''
 			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value !== '' && inputMail.value !== '' && textarea.value === '') {
 		sendStatus.classList.add('senderror')
@@ -223,9 +203,7 @@ const send = e => {
 			errorText.classList.remove('actionerror')
 			inputMail.classList.remove('backgrounderror')
 			textarea.classList.remove('backgrounderror')
-			inputName.value = ''
 			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value === '' && inputMail.value !== '' && textarea.value !== '') {
 		sendStatus.classList.add('senderror')
@@ -243,9 +221,7 @@ const send = e => {
 			errorMail.classList.remove('actionerror')
 			inputName.classList.remove('backgrounderror')
 			inputMail.classList.remove('backgrounderror')
-			inputName.value = ''
 			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value !== '' && inputMail.value === '' && textarea.value !== '') {
 		sendStatus.classList.add('senderror')
@@ -259,9 +235,6 @@ const send = e => {
 			sendStatus.classList.remove('senderror')
 			errorMail.classList.remove('actionerror')
 			inputMail.classList.remove('backgrounderror')
-			inputName.value = ''
-			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value !== '' && inputMail.value !== '' && textarea.value !== '') {
 		sendStatus.classList.add('senderror')
@@ -275,9 +248,7 @@ const send = e => {
 			sendStatus.classList.remove('senderror')
 			errorMail.classList.remove('actionerror')
 			inputMail.classList.remove('backgrounderror')
-			inputName.value = ''
 			inputMail.value = ''
-			textarea.value = ''
 		}, 3000)
 	}
 
